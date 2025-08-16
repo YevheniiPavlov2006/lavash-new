@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- ======================================== -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Current order</title>
+		<meta name="description" content=""/>
+
+		<link rel="stylesheet" href="css/styles.css?ver=333">
+		<!-- End Links -->
+		<!-- ======================================== -->
+	</head>
+
+	<body>
+		<div class="header-menu-wrapper">
+			<div class="flex justify-between mb-6 items-center">
+				<a href="#" class="mx-auto"><img src="img/logo.png" width="84" height="19"  alt=""></a>
+				<div class="menu-btn -ml-10">
+					<span></span>
+				</div>
+			</div>
+			<nav class="menu-nav">
+				<ul class="menu-nav-ul">
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a">Каталог продукции</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a">Часто задаваемые вопросы</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a">Контакты</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalCall">Перезвоните мне</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalLang">Язык</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a">Отзывы</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="btn">Войти в аккаунт</a>
+		</div>
+		<div class="page">
+			<header class="header">
+				<div class="container">
+					<div class="header-city">
+						<div class="header-in">
+							<div class="menu-btn xs:mr-5">
+								<span></span>
+							</div>
+							<div class="shrink-0 xs:mr-auto">
+								<a href="#"><img src="img/logo.png" width="138" height="31"  alt=""></a>
+							</div>
+							<div class="main-search main-search-header">
+								<button class="main-search-btn"></button>
+								<input type="text" class="form-control" placeholder="Поиск"/>
+							</div>
+							<div class="flex -ml-5">
+								<div class="rounded-icos ml-5 hidden">
+									<img src="img/profile-ico1.svg" width="40" height="40" alt="" class="img-fit">
+								</div>
+								<div class="rounded-icos ml-5" data-bs-toggle="modal" data-bs-target="#modalCall">
+									<img src="img/phone-btn.svg" width="20" height="20" alt="">
+								</div>
+								<div class="rounded-icos ml-5" data-bs-toggle="modal" data-bs-target="#modalLang">
+									<img src="img/lang_ico.svg" width="24" height="25" alt="">
+								</div>
+							</div>
+						</div>
+						<!--<div class="header-city-in">
+				 <div>
+					<div class="h2">Ваш город Москва?</div>
+					<div class="header-city-caption">Товары и акции зависят от адреса</div>
+				 </div>
+				 <div class="flex gap-3">
+					<a href="#" class="btn headerCityYes">Да, верно</a>
+					<a href="#" class="btn btn-cancel" data-bs-toggle="modal" data-bs-target="#modalCity">Нет, другой</a>
+				 </div>
+			  </div>-->
+					</div>
+				</div>
+			</header>
+			<div class="container flex-grow">
+				<div class="main-columns">
+					<div class="column-left column-left-cabinet scrollbar-no">
+						<div class="flex-grow">
+							<div class="cabinet-title">Личный кабинет</div>
+
+							<div class="cabinet-top mb-3">
+								<div class="cabinet-ico">
+									<img src="img/profile-ico1.svg" width="44" height="44" alt="">
+								</div>
+								<div class="text-base flex-grow">
+									<div class="mb-0.5">Анастасия</div>
+									<div class="color-grey">+7 919 258 5555</div>
+								</div>
+								<a href="#" class="next-btn cabinetBtn sm:hidden"></a>
+							</div>
+
+							<ul class="mb-4">
+								<li class="menu-nav-li">
+									<a href="#" class="menu-nav-a">Текущий заказ</a>
+								</li>
+								<li class="menu-nav-li">
+									<a href="#" class="menu-nav-a">История покупок</a>
+								</li>
+								<li class="menu-nav-li">
+									<a href="#" class="menu-nav-a">Избранные товары</a>
+								</li>
+								<li class="menu-nav-li">
+									<a href="#" class="menu-nav-a">Профиль пользователя</a>
+								</li>
+							</ul>
+							<a href="#" class="exit-btn mt-4">Выйти</a>
+						</div>
+						<a href="#" class="goto-home mt-5">На главную</a>
+					</div>
+					<!--end column-left-->
+					<div class="column-center column-center-cabinet">
+						<div class="column-center-3 accordion">
+							<div class="main-title mb-4 md:mb-6">
+								<a href="#" class="prev-btn cabinetBtn sm:hidden"></a>
+								<div class="h2">Текущий заказ</div>
+								<div class="h2 h2-cabinet">Личный кабинет</div>
+								<a href="#" class="next-btn notvisible"></a>
+							</div>
+							<div class="basket-items-canceled mb-5">
+								<div class="accordion-item show">
+									<div class="flex items-center w-full justify-between mb-4">
+										<div class="btn btn-success">Заказ принят</div>
+										<button class="faq-button p-0 w-24 accordion-button flex-grow"></button>
+									</div>
+									<div class="mb-2.5 flex items-center">
+										<div class="xs:flex">
+											<div class="xs:mr-5 mb-1">Заказ № 3568846</div>
+											<div class="color-grey">02.05.24</div>
+										</div>
+										<div class="text-lg xs:text-xl font-bold ml-auto">258 ₽</div>
+									</div>
+									<div>
+										<img src="img/ready-ico.svg" width="50" height="50" alt="" class="block mb-2 mx-auto">
+										<ul class="step-list step-list-current mb-2">
+											<li class="step-list-li step-list-li-active"></li>
+											<li class="step-list-li step-list-li-active"></li>
+											<li class="step-list-li"></li>
+											<li class="step-list-li"></li>
+											<li class="step-list-li"></li>
+										</ul>
+										<div class="text-lg font-bold text-center mb-4">Готовим ваш заказ</div>
+									</div>
+									<div class="accordion-collapse text-xs sm:text-sm mb-2.5 xs:mb-4">
+										<div class="canceled-item">
+											<div class="canceled-item-img">
+												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+											</div>
+
+											<div class="canceled-item-descript">
+												<div class="flex justify-between items-center">
+													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+													<div class="addto-favorite"></div>
+												</div>
+												<div class="flex items-center justify-between">
+													<div>
+														<span class="mr-2.5">№ 58864</span>
+														<span class="color-grey">8 шт</span>
+													</div>
+													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="canceled-item">
+											<div class="canceled-item-img">
+												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+											</div>
+
+											<div class="canceled-item-descript">
+												<div class="flex justify-between items-center">
+													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+													<div class="addto-favorite"></div>
+												</div>
+												<div class="flex items-center justify-between">
+													<div>
+														<span class="mr-2.5">№ 58864</span>
+														<span class="color-grey">8 шт</span>
+													</div>
+													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="canceled-item">
+											<div class="canceled-item-img">
+												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+											</div>
+
+											<div class="canceled-item-descript">
+												<div class="flex justify-between items-center">
+													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+													<div class="addto-favorite"></div>
+												</div>
+												<div class="flex items-center justify-between">
+													<div>
+														<span class="mr-2.5">№ 58864</span>
+														<span class="color-grey">8 шт</span>
+													</div>
+													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="canceled-item">
+											<div class="canceled-item-img">
+												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+											</div>
+
+											<div class="canceled-item-descript">
+												<div class="flex justify-between items-center">
+													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+													<div class="addto-favorite"></div>
+												</div>
+												<div class="flex items-center justify-between">
+													<div>
+														<span class="mr-2.5">№ 58864</span>
+														<span class="color-grey">8 шт</span>
+													</div>
+													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="canceled-item-row">
+										<div class="canceled-item-col canceled-item-col-2">
+											<div class="canceled-item-row2">
+												<div class="canceled-item-col2">Дата и время доставки</div>
+												<div class="canceled-item-col2">С 15 до 18<br>Вторник, 14.05.24</div>
+											</div>
+											<div class="canceled-item-row2">
+												<div class="canceled-item-col2">Адрес доставки</div>
+												<div class="canceled-item-col2">г. Москва, Причальный пр-д, 3 корпус 3, кв. 59</div>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-cancel w-auto xs:w-full">Показать все товары заказа</a>
+								</div>
+							</div>
+							<div class="basket-items-canceled mb-5">
+								<div class="accordion-item show">
+									<div class="flex items-center w-full justify-between mb-4">
+										<div class="btn btn-obrabotka">Заказ в обработке</div>
+										<button class="faq-button p-0 w-24 accordion-button flex-grow"></button>
+									</div>
+									<div class="mb-2.5 xs:flex">
+										<div class="xs:mr-5">Заказ № 3568846</div>
+										<div class="color-grey">02.05.24</div>
+									</div>
+									<div class="accordion-collapse text-xs sm:text-sm mb-2.5 xs:mb-4">
+										<div class="canceled-item">
+											<div class="canceled-item-img">
+												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+											</div>
+
+											<div class="canceled-item-descript">
+												<div class="flex justify-between items-center">
+													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+													<div class="addto-favorite"></div>
+												</div>
+												<div class="flex items-center justify-between">
+													<div>
+														<span class="mr-2.5">№ 58864</span>
+														<span class="color-grey">8 шт</span>
+													</div>
+													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="canceled-item">
+											<div class="canceled-item-img">
+												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+											</div>
+
+											<div class="canceled-item-descript">
+												<div class="flex justify-between items-center">
+													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+													<div class="addto-favorite"></div>
+												</div>
+												<div class="flex items-center justify-between">
+													<div>
+														<span class="mr-2.5">№ 58864</span>
+														<span class="color-grey">8 шт</span>
+													</div>
+													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="canceled-item">
+											<div class="canceled-item-img">
+												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+											</div>
+
+											<div class="canceled-item-descript">
+												<div class="flex justify-between items-center">
+													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+													<div class="addto-favorite"></div>
+												</div>
+												<div class="flex items-center justify-between">
+													<div>
+														<span class="mr-2.5">№ 58864</span>
+														<span class="color-grey">8 шт</span>
+													</div>
+													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="canceled-item">
+											<div class="canceled-item-img">
+												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+											</div>
+
+											<div class="canceled-item-descript">
+												<div class="flex justify-between items-center">
+													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+													<div class="addto-favorite"></div>
+												</div>
+												<div class="flex items-center justify-between">
+													<div>
+														<span class="mr-2.5">№ 58864</span>
+														<span class="color-grey">8 шт</span>
+													</div>
+													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-xs sm:text-sm">
+										<div class="row flex-nowrap">
+											<div class="col whitespace-nowrap mb-3 sm:mb-4">Дата и время доставки</div>
+											<div class="col text-right mb-3 sm:mb-4">С 15 до 18<br>Вторник, 14.05.24</div>
+										</div>
+										<div class="row flex-nowrap ">
+											<div class="col whitespace-nowrap mb-3 sm:mb-4">Адрес доставки</div>
+											<div class="col text-right mb-3 sm:mb-4">г. Москва, Причальный пр-д, 3 корпус 3, кв. 59</div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-cancel w-auto xs:w-full">Показать все товары заказа</a>
+								</div>
+							</div>
+						</div>
+						<!--end column-center-3-->
+						<footer class="footer">
+							<div class="flex items-center justify-between">
+								<a href="#" class="flex-shrink-0 mr-2"><img src="img/logo.png" width="96" height="21" loading="lazy" decoding="async" alt="" class="mb-5"></a>
+								<ul class="social mb-5">
+									<li>
+										<a href="#"><img src="img/social_insta.svg" alt="" width="16" height="16" loading="lazy" decoding="async" class="img-center"></a>
+									</li>
+									<li>
+										<a href="#"><img src="img/social_tube.svg" alt="" width="18" height="14" loading="lazy" decoding="async" class="img-center"></a>
+									</li>
+									<li>
+										<a href="#"><img src="img/social_fb.svg" alt="" width="18" height="18" loading="lazy" decoding="async" class="img-center"></a>
+									</li>
+								</ul>
+							</div>
+							<ul class="footer-nav">
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">О нас</a>
+								</li>
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">Правила покупки</a>
+								</li>
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">Условия возврата</a>
+								</li>
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">Часто задаваемые вопросы</a>
+								</li>
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">Вопрос-ответ</a>
+								</li>
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">Контакты</a>
+								</li>
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">Информация об авторских правах</a>
+								</li>
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">Стать курьером</a>
+								</li>
+								<li class="footer-nav-li">
+									<a href="#" class="footer-nav-a">Поставщикам</a>
+								</li>
+							</ul>
+							<div class="footer-year">2024</div>
+						</footer>
+					</div>
+					<!--end column-center-->
+					<div class="column-right basket-wrapper scrollbar-no">
+						<div class="basket-top">
+							<div class="basket-addr" data-bs-toggle="modal" data-bs-target="#modalCity">
+								<div class="basket-addr-in">
+									<span class="basket-addr-span1">Никольская улица длинное, </span>
+									<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
+								</div>
+								<button class="basket-addr-btn"></button>
+							</div>
+							<div class="basket-addr-bottom mb-4">Доставка в течении дня</div>
+							<button class="basket-close"></button>
+						</div>
+						<div class="basket-items  scrollbar-no">
+							<div class="message-box">
+                        Некоторые товары раскупили - мы убрали их из вашей корзины
+                        <button class="message-box-close"></button>
+							</div>
+							<div class="basket-item">
+								<div class="basket-img-wrap">
+									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+								</div>
+
+								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+                           <div class="basket-title-span">500 г</div>
+									<button class="basket-remove"></button>
+								</div>
+								<div class="basket-descript">
+									<div class="rangedVal">
+										<button type="button" class="decreaseVal"></button>
+										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+										<button type="button" class="increaseVal"></button>
+									</div>
+									<div class="text-right">
+										<div class="basket-numbers">
+											<span class="basketNumber">2</span> шт</div>
+										<span class="basket-price-through">1044</span>
+										<span class="basket-price">
+											<span class="basketPrice">1004</span> ₽</span>
+									</div>
+								</div>
+
+							</div>
+							<!--end basket-item-->
+							<div class="basket-item">
+								<div class="basket-img-wrap">
+									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+								</div>
+
+								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+                           <div class="basket-title-span">500 г</div>
+									<button class="basket-remove"></button>
+								</div>
+								<div class="basket-descript">
+									<div class="rangedVal">
+										<button type="button" class="decreaseVal"></button>
+										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+										<button type="button" class="increaseVal"></button>
+									</div>
+									<div class="text-right">
+										<div class="basket-numbers">
+											<span class="basketNumber">2</span> шт</div>
+										<span class="basket-price-through">1044</span>
+										<span class="basket-price">
+											<span class="basketPrice">1004</span> ₽</span>
+									</div>
+								</div>
+
+							</div>
+							<!--end basket-item-->
+							<div class="basket-item">
+								<div class="basket-img-wrap">
+									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+								</div>
+
+								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+                           <div class="basket-title-span">500 г</div>
+									<button class="basket-remove"></button>
+								</div>
+								<div class="basket-descript">
+									<div class="rangedVal">
+										<button type="button" class="decreaseVal"></button>
+										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+										<button type="button" class="increaseVal"></button>
+									</div>
+									<div class="text-right">
+										<div class="basket-numbers">
+											<span class="basketNumber">2</span> шт</div>
+										<span class="basket-price-through">1044</span>
+										<span class="basket-price">
+											<span class="basketPrice">1004</span> ₽</span>
+									</div>
+								</div>
+
+							</div>
+							<!--end basket-item-->
+							<div class="basket-item">
+								<div class="basket-img-wrap">
+									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+								</div>
+
+								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+                           <div class="basket-title-span">500 г</div>
+									<button class="basket-remove"></button>
+								</div>
+								<div class="basket-descript">
+									<div class="rangedVal">
+										<button type="button" class="decreaseVal"></button>
+										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+										<button type="button" class="increaseVal"></button>
+									</div>
+									<div class="text-right">
+										<div class="basket-numbers">
+											<span class="basketNumber">2</span> шт</div>
+										<span class="basket-price-through">1044</span>
+										<span class="basket-price">
+											<span class="basketPrice">1004</span> ₽</span>
+									</div>
+								</div>
+
+							</div>
+							<!--end basket-item-->
+							<div class="basket-item">
+								<div class="basket-img-wrap">
+									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+								</div>
+
+								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+                           <div class="basket-title-span">500 г</div>
+									<button class="basket-remove"></button>
+								</div>
+								<div class="basket-descript">
+									<div class="rangedVal">
+										<button type="button" class="decreaseVal"></button>
+										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+										<button type="button" class="increaseVal"></button>
+									</div>
+									<div class="text-right">
+										<div class="basket-numbers">
+											<span class="basketNumber">2</span> шт</div>
+										<span class="basket-price-through">1044</span>
+										<span class="basket-price">
+											<span class="basketPrice">1004</span> ₽</span>
+									</div>
+								</div>
+
+							</div>
+							<!--end basket-item-->
+							<div class="flex justify-between items-center mt-2.5">
+								<span class="basket-delivery-title">Доставка</span>
+								<div class="basket-delivery-price">
+									<span class="basketDelivery">3000</span> ₽</div>
+							</div>
+						</div>
+						<div class="basket-total basket-items-after">
+							<div class="basket-total-span">Итого</div>
+							<span class="basketTotal">2 458</span> ₽
+                     <button class="btn mt-4 font-normal">Продолжить</button>
+						</div>
+
+						<div class="basket-empty">
+							<img src="img/basket-empty.svg" alt="" width="100" height="100" loading="lazy" decoding="async" class="basket-empty-img">
+                     Ваша корзина пока пуста
+                  </div>
+					</div>
+					<!--end column-right-->
+				</div>
+			</div>
+			<!--end container-->
+
+			<button class="basket-btn">
+				<div class="font-bold text-base">589 ₽</div>
+				<div class="text-xs">30 минут</div>
+			</button>
+		</div>
+
+		<div class="modal fade" id="modalSms" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Код из смс</div>
+						<form action="#">
+							<div class="mb-5">Отправили на +7 258 272 8626</div>
+							<div class="mb-4 form-group">
+								<input type="text" class="form-control" placeholder="0000"/>
+							</div>
+							<div class="text-center text-sm mb-5">Отправили на +7 258 272 8626</div>
+							<div class="modal-bottom">
+								<button  class="btn">Дальше</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalSms-->
+
+		<div class="modal fade" id="modalPromokod" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Ввести промокод</div>
+						<form action="#">
+							<div class="mb-4 form-group">
+								<input type="text" class="form-control" placeholder="0000"/>
+							</div>
+							<button  class="btn mb-5">Подтвердить</button>
+							<div class="font-bold text-center mb-5">Условия доставки:</div>
+							<ul class="text-sm">
+								<li class="flex mb-5">
+									<div class="flex-shrink-0 w-5 h-5 relative mr-2">
+										<img src="img/dostavka-ico1.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+									</div>
+								По Риге доставка 4 евро (если в заказе присутствует 30 лавашей, то доставка бесплатна) 
+							</li>
+								<li class="flex mb-5">
+									<div class="flex-shrink-0 w-5 h-5 relative mr-2">
+										<img src="img/dostavka-ico1.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+									</div>
+								В Юрмалу доставка 8 евро (если в заказе присутствует 50 лавашей, то доставка бесплатна)
+							</li>
+								<li class="flex mb-2">
+									<div class="flex-shrink-0 w-5 h-5 relative mr-2">
+										<img src="img/dostavka-ico2.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+									</div>
+								Доставка осуществляется на следующий день после заказа или позже выбрав день (кроме субботы и воскресенья)
+							</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalPromokod-->
+
+		<div class="modal fade" id="modalUsloviyaDostavki" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<img src="img/dostavka-ico.svg" alt="" width="50" height="50" loading="lazy" decoding="async" class="block mx-auto">
+						<div class="font-bold text-center mb-5 mt-5">Условия доставки:</div>
+						<ul class="text-sm">
+							<li class="flex mb-5">
+								<div class="flex-shrink-0 w-5 h-5 relative mr-2">
+									<img src="img/dostavka-ico1.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+								</div>
+							По Риге доставка 4 евро (если в заказе присутствует 30 лавашей, то доставка бесплатна) 
+						</li>
+							<li class="flex mb-5">
+								<div class="flex-shrink-0 w-5 h-5 relative mr-2">
+									<img src="img/dostavka-ico1.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+								</div>
+							В Юрмалу доставка 8 евро (если в заказе присутствует 50 лавашей, то доставка бесплатна)
+						</li>
+							<li class="flex mb-2">
+								<div class="flex-shrink-0 w-5 h-5 relative mr-2">
+									<img src="img/dostavka-ico2.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+								</div>
+							Доставка осуществляется на следующий день после заказа или позже выбрав день (кроме субботы и воскресенья)
+						</li>
+						</ul>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalUsloviyaDostavki-->
+
+		<div class="modal fade" id="modalOformlenie" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in min-h-80 flex flex-col">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Оформление заказа</div>
+						<form action="#" class="flex-grow flex flex-col">
+							<div class="flex-grow">
+								<div class="mb-5 text-xs color-grey text-center">Телефон</div>
+								<div class="mb-4 form-group">
+									<input type="text" class="form-control form-control-transparent" placeholder="+7"/>
+								</div>
+								<div class="color-grey text-sm mb-5">Продолжая вы соглашаетесь с <a href="#" class="font-semibold">Условиями использования</a> и <a href="#" class="font-semibold">Политикой конфиденциальности</a>
+								</div>
+
+								<button  class="btn">Получить код</button>
+							</div>
+
+							<div class="modal-bottom">
+								<button  class="btn btn-cancel">Войти</button>
+							</div>
+
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalOformlenie-->
+
+		<div class="modal fade" id="modalAddr" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<form action="#">
+
+							<div class="modal-title">Выбрать адрес</div>
+
+							<div class="flex-grow modal-addr-list overflow-auto relative z-10">
+								<label class="radio radio-select text-sm mb-4">
+									<input type="radio" class="radio-input" name="radio_addr" checked/>
+									<span class="radio-ico"></span>
+									<span>
+										<span class="radio-select-caption">Адрес 1 выбранный</span></span>
+								</label>
+								<label class="radio radio-select text-sm mb-4">
+									<input type="radio" class="radio-input" name="radio_addr" checked/>
+									<span class="radio-ico"></span>
+									<span>
+										<span class="radio-select-caption">Адрес 2 выбранный</span></span>
+								</label>
+								<label class="radio radio-select text-sm mb-4">
+									<input type="radio" class="radio-input" name="radio_addr" checked/>
+									<span class="radio-ico"></span>
+									<span>
+										<span class="radio-select-caption">Адрес 3 выбранный</span></span>
+								</label>
+
+							</div>
+							<div class="modal-bottom mt-4">
+								<button  class="btn btnAddAddr" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalCity">Новый адрес</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalAddr-->
+
+		<div class="modal fade" id="modalSamovivoz" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<form action="#">
+
+							<div class="modal-title">Самовывоз из магазина</div>
+
+							<div class="flex-grow modal-addr-list overflow-auto relative z-10">
+								<label class="radio radio-select text-sm mb-4">
+									<input type="radio" class="radio-input" name="radio_addr" checked/>
+									<span class="radio-ico"></span>
+									<span>
+										<span class="radio-select-caption">Рига ул. Заморская 46</span></span>
+								</label>
+								<label class="radio radio-select text-sm mb-4">
+									<input type="radio" class="radio-input" name="radio_addr" checked/>
+									<span class="radio-ico"></span>
+									<span>
+										<span class="radio-select-caption">Юрмала ул. Прогрнова ст. 579</span></span>
+								</label>
+								<label class="radio radio-select text-sm mb-4">
+									<input type="radio" class="radio-input" name="radio_addr" checked/>
+									<span class="radio-ico"></span>
+									<span>
+										<span class="radio-select-caption">Рига ул. Мраморная 23, ТЦ “Малиновка”, этаж 2</span></span>
+								</label>
+
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalSamovivoz-->
+
+		<div class="modal fade" id="modalQuestion" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Ваш вопрос</div>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Ваше имя" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="tel" class="form-control form-control-phone" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<input type="text" class="form-control" placeholder="Ваш вопрос"/>
+							</div>
+							<div class="modal-bottom">
+								<button  class="btn submit">Оставить вопрос</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalQuestion-->
+
+		<div class="modal fade" id="modalOtziv" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Ваш отзыв</div>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Ваше имя" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="tel" class="form-control form-control-phone" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<input type="text" class="form-control form-control-datepicker" placeholder="Дата"/>
+							</div>
+							<div class="mb-4  form-group">
+								<input type="text" class="form-control" placeholder="Ваш отзыв"/>
+							</div>
+							<div class="mb-6 flex items-center justify-between">
+								<span>Оценка</span>
+								<select class="star-rating">
+									<option value="">Select a rating</option>
+									<option value="5">Excellent</option>
+									<option value="4">Very Good</option>
+									<option value="3">Average</option>
+									<option value="2">Poor</option>
+									<option value="1">Terrible</option>
+								</select>
+							</div>
+							<div class="modal-bottom">
+								<button  class="btn submit">Оставить отзыв</button>
+							</div>
+							<div class="text-center mt-12 text-sm">
+							Спасибо за ваш отзыв!<br>
+							Он обрабатывается и скоро будет<br>
+							опубликован
+						</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalOtziv-->
+
+		<div class="modal fade" id="modalBasketData" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Введите следующие данные</div>
+						<form action="#" class="form">
+							<div class="form-group mb-4">
+								<input type="text" class="form-control" placeholder="Имя"/>
+							</div>
+							<div class="form-group mb-4">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Фамилия"/>
+							</div>
+							<div class="form-group mb-4">
+								<input type="tel" class="form-control form-control-phone" required/>
+							</div>
+							<div class="form-group mb-4">
+								<input type="email" class="form-control" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+							</div>
+							<div class="mb-4 color-grey">
+						Выберите желаемую дату доставки
+					</div>
+							<div class="form-group mb-5">
+								<input type="text" class="form-control" placeholder="Комментарий к заказу (по желанию)"/>
+							</div>
+							<div class="datepicker-wrap">
+								<div class="form-group mb-5 flex gap-3">
+									<label class="radio radio-select text-sm flex-grow">
+										<input type="radio" class="radio-input" name="radio_addr" checked/>
+										<span class="radio-ico"></span>
+										<span>
+											<span class="radio-select-caption">Завтра</span></span>
+									</label>
+									<label class="radio radio-select text-sm flex-grow radio-datepicker">
+										<input type="radio" class="radio-input" name="radio_addr"/>
+										<span class="radio-ico"></span>
+										<span>
+											<span class="radio-select-caption">Выбрать день</span>
+										</span>
+									</label>
+								</div>
+								<input type="text" class="radio-datepicker-el">
+							</div>
+							<div class="modal-bottom">
+								<button class="btn submit mb-3">Да, верно. Дальше</button>
+							</div>
+							<div class="color-grey text-xs text-center">Ваш заказ №259956553</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalBasketData-->
+
+		<div class="modal fade" id="modalDate" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Когда доставить?</div>
+						<form action="#" class="form">
+							<div class="datepicker-wrap">
+								<div class="form-group mb-5 flex gap-3">
+									<label class="radio radio-select text-sm flex-grow">
+										<input type="radio" class="radio-input" name="radio_addr" checked/>
+										<span class="radio-ico"></span>
+										<span>
+											<span class="radio-select-caption">Завтра</span></span>
+									</label>
+									<label class="radio radio-select text-sm flex-grow radio-datepicker">
+										<input type="radio" class="radio-input" name="radio_addr"/>
+										<span class="radio-ico"></span>
+										<span>
+											<span class="radio-select-caption">Выбрать день</span>
+										</span>
+									</label>
+								</div>
+								<input type="text" class="radio-datepicker-el">
+							</div>
+							<div class="modal-bottom">
+								<button class="btn submit mb-3">Да, верно. Дальше</button>
+							</div>
+							<div class="color-grey text-xs text-center">Ваш заказ №259956553</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalDate-->
+
+		<div class="modal fade" id="modalDateFilter" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="datepicker-wrap mt-10">
+							<input type="text" class="filter-datepicker -left-9999 absolute">
+						</div>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalDateFilter-->
+
+		<div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button class="prev-btn prev-btn-color2 sm:hidden" data-bs-dismiss="modal" ></button>
+						<button type="button" class="btn-close hidden sm:block" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title mb-0">&nbsp;</div>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="email" class="form-control" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="password" class="form-control" placeholder="Пароль" required/>
+							</div>
+							<div class="mb-4">
+								<a href="#" class="text-sm color-grey">Забыли пароль</a>
+							</div>
+
+							<button type="submit" class="btn mb-10">Войти</button>
+							<a href="#" class="btn btn-google mb-10">Войти с помощью Google</a>
+							<div class="mb-4 color-grey text-xs">Еще нет аккаунта, зарегистрируйтесь и заказывайте еще быстрее</div>
+							<a href="#" class="btn btn-cancel mb-4">Зарегистрироваться</a>
+							<label class="checkbox mb-5 text-xs">
+								<input type="checkbox" class="checkbox-input"/>
+								<div class="checkbox-ico"></div>
+								<span>Получать <a href="#" class="font-bold">предложения об акциях и скидках</a>
+								</span>
+							</label>
+							<div class="color-grey text-sm mb-5">Продолжая вы соглашаетесь с <a href="#" class="font-semibold">Условиями использования</a> и <a href="#" class="font-semibold">Политикой конфиденциальности</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalLogin-->
+
+		<div class="modal fade" id="modalRegister" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button class="prev-btn prev-btn-color2 sm:hidden" data-bs-dismiss="modal" ></button>
+						<button type="button" class="btn-close hidden sm:block" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title mb-0">&nbsp;</div>
+						<form action="#" class="form relative z-10">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Имя" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="tel" class="form-control form-control-phone" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="password" class="form-control" placeholder="Пароль" required/>
+							</div>
+							<label class="radio radio-select text-sm mb-3">
+								<input type="radio" class="radio-input" name="radio_addr" checked/>
+								<span class="radio-ico"></span>
+								<span>
+									<span class="radio-select-caption">Частное лицо</span></span>
+							</label>
+							<label class="radio radio-select text-sm mb-12">
+								<input type="radio" class="radio-input" name="radio_addr" checked/>
+								<span class="radio-ico"></span>
+								<span>
+									<span class="radio-select-caption">Юридическое лицо</span></span>
+							</label>
+							<button type="submit" class="btn mb-4">Зарегистриооваться</button>
+							<div class="text-xs color-grey mb-4">Уже есть аккаунт?</div>
+							<button href="#" class="btn btn-cancel mb-4">Войти</button>
+							<label class="checkbox mb-5 text-xs color-grey">
+								<input type="checkbox" class="checkbox-input"/>
+								<div class="checkbox-ico"></div>
+								<span>Получать <a href="#" class="font-bold">предложения об акциях и скидках</a>
+								</span>
+							</label>
+							<div class="color-grey text-sm mb-5">Продолжая вы соглашаетесь с <a href="#" class="font-semibold">Условиями использования</a> и <a href="#" class="font-semibold">Политикой конфиденциальности</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalRegister-->
+
+		<div class="modal fade" id="modalKarta" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Новая карта</div>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control form-control-card" placeholder="0000 0000 0000 0000" required pattern="\d{4} \d{4} \d{4} \d{4}"/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control form-control-dm" placeholder="Месяц / год" pattern="\d{2}/\d{2}" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control form-control-cvv" placeholder="CVV / CVC"  pattern="\d{3}"  required/>
+							</div>
+							<label class="checkbox mb-5 text-xs color-grey">
+								<input type="checkbox" class="checkbox-input"/>
+								<div class="checkbox-ico"></div>
+								<span>Сохранить карту для следующих покупок</span>
+							</label>
+							<div class="modal-bottom mb-5">
+								<button  class="btn submit">Оплатить <span>258 986</span> ₽</button>
+							</div>
+							<div class="color-grey text-xs text-center mb-6">Ваш заказ №259956553</div>
+							<div class="mb-5 flex justify-center gap-3">
+								<div class="flex-shrink-0">
+									<img src="img/pay-visa.svg" alt=""  width="46" height="15" loading="lazy" decoding="async" class="block">
+								</div>
+								<div class="flex-shrink-0">
+									<img src="img/pay-mastercard.svg" alt="" width="32" height="25" loading="lazy" decoding="async" class="block">
+								</div>
+							</div>
+							<div class="color-grey text-sm">
+							Конфиденциальность сообщаемой персональной информации обеспечивается. Введенная информация и ваши данные не будут предоставлены третьим лицам за исключением случаев предусмотренных законодательством. Проведение платежей по банковским картам осуществляется в строгом соответствии платёжных систем Visa и Mastercard
+						</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalKarta-->
+
+		<div class="modal fade" id="modalBasketCancel" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<img src="img/basket-ico.svg" alt="" width="50" height="50" loading="lazy" decoding="async" class="block mx-auto">
+						<div class='my-3 text-center'>Уточните почему вы хотите отменить заказ</div>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Причина отмены" required/>
+							</div>
+							<div class="modal-bottom">
+								<button  class="btn submit">Подтвердить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalBasketCancel-->
+
+		<div class="modal fade" id="modalBasketCanceled" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<img src="img/remove-ico.svg" alt="" width="50" height="50" loading="lazy" decoding="async" class="block mx-auto">
+						<div class='my-3 text-center'>Ваш заказ отменен</div>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalBasketCanceled-->
+
+		<div class="modal fade" id="modalBasketAdded" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<img src="img/basket-ico.svg" alt="" width="50" height="50" loading="lazy" decoding="async" class="block mx-auto">
+						<div class='my-3 text-center'>Заказ добавлен в корзину, вам осталось только оплатить его</div>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalBasketAdded-->
+
+		<div class="modal fade" id="modalRegisterSuccess" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<img src="img/gift-ico.svg" alt="" width="50" height="50" loading="lazy" decoding="async" class="block mx-auto">
+						<div class='my-3 text-center'>Вы успешно зарегистрировались! (Например) Хотим подарить вам 5% на первый заказ</div>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalRegisterSuccess-->
+
+		<div class="modal fade" id="modalPassword" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<img src="img/basket-ico.svg" alt="" width="50" height="50" loading="lazy" decoding="async" class="block mx-auto">
+						<div class='my-3 text-center'>Пожалуйста установите новый пароль</div>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="password" class="form-control" placeholder="Пароль" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="password" class="form-control" placeholder="Повторить пароль" required/>
+							</div>
+							<div class="modal-bottom">
+								<button  class="btn submit">Подтвердить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalPassword-->
+
+		<div class="modal fade" id="modalCall" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Перезвоните мне</div>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Ваше имя" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="tel" class="form-control form-control-phone" required/>
+							</div>
+							<div class="mb-4  form-group">
+								<label class="radio">
+									<input type="checkbox" class="radio-input"/>
+									<span class="radio-ico"></span>
+									<span class="flex items-center justify-end text-xs gap-5 color-grey">
+										<span class="flex-grow">Не звоните, напишите мне в мессенджер (Как вариант)</span>
+										<ul class="social">
+											<li>
+												<a href="#"><img src="img/social_viber.svg" alt="" width="18" height="18" loading="lazy" decoding="async" class="img-center"></a>
+											</li>
+											<li>
+												<a href="#"><img src="img/social_telegram.svg" alt="" width="18" height="18" loading="lazy" decoding="async"  class="img-center"></a>
+											</li>
+										</ul>
+									</span>
+								</label>
+							</div>
+							<div class="mb-4  form-group">
+								<input type="text" class="form-control" placeholder="Тема звонка"/>
+							</div>
+							<div class="modal-bottom">
+								<button  class="btn submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalCall-->
+
+		<div class="modal fade" id="modalDataProfile" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Изменить данные</div>
+						<form action="#" class="form">
+							<ul class="mb-4 form-group profile-images">
+								<li class="profile-images-li">
+									<img src="img/profile-ico1.svg" width="40" height="40" alt="" class="img-fit">
+								</li>
+								<li class="profile-images-li profile-images-li-active">
+									<img src="img/profile-ico2.svg" width="40" height="40" alt="" class="img-fit">
+								</li>
+								<li class="profile-images-li">
+									<img src="img/profile-ico3.svg" width="40" height="40" alt="" class="img-fit">
+								</li>
+								<li class="profile-images-li">
+									<img src="img/profile-ico4.svg" width="40" height="40" alt="" class="img-fit">
+								</li>
+								<li class="profile-images-li profile-images-li-file">
+									<input type="file"/>
+									<img src="img/profile-ico-add.svg" width="40" height="40" alt="" class="img-fit">
+								</li>
+							</ul>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Ваше имя" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="email" class="form-control" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="tel" class="form-control form-control-phone" required/>
+							</div>
+							<div class="payment-item-look mb-4">
+								<div class="input-look mt-4 mb-1">
+									<input type="password" value='2896 6896 6666 0007' class="form-control input-look-el" disabled>
+									<div class="input-look-btn"></div>
+								</div>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<textarea name="" id="" class="form-control">г. Москва, ул. Ольшанский пр., 24 кв. 4/ г. Москшанский пр., 24 кв. 4/
+							</textarea>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="text" class="form-control" placeholder="Добавить адрес"/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="text" class="form-control form-control-card form-control-card-ico" placeholder="Добавить банковскую карту"/>
+							</div>
+							<label class="checkbox mb-5 text-sm">
+								<input type="checkbox" class="checkbox-input"/>
+								<div class="checkbox-ico"></div>
+								<span>Удалить данные банковской карты</span>
+							</label>
+							<div class="mb-5 form-group">
+								<button class="btn btn-cancel">Отменить</button>
+							</div>
+							<div class="modal-bottom">
+								<button  class="btn submit">Сохранить изменения</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalDataProfile-->
+
+		<div class="modal fade" id="modalEmail" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<form class="modal-content-in justify-center min-h-80 flex flex-col form" action="#">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title mb-1">&nbsp;</div>
+
+						<div class="color-grey text-sm mb-4">Пожалуйста, введите ваш email, и мы вышлем вам код доступа</div>
+						<div class="mb-12 form-group">
+							<div class="error">Некорректно введены данные для этого поля</div>
+							<input type="email" class="form-control" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+						</div>
+						<div class="modal-bottom">
+							<button  class="btn submit">Получить код</button>
+						</div>
+					</form>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalEmail-->
+
+		<div class="modal fade" id="modalData" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title text-ellipsis overflow-hidden whitespace-nowrap" title="Проверьте следующие данные">Проверьте следующие данные</div>
+						<ul class="step-list">
+							<li class="step-list-li step-list-li-active"></li>
+							<li class="step-list-li step-list-li-active"></li>
+							<li class="step-list-li"></li>
+							<li class="step-list-li"></li>
+							<li class="step-list-li"></li>
+						</ul>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Ваше имя" value="Геннадий" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="tel" class="form-control form-control-phone" value="+380991111111" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Слишком короткий номер</div>
+								<input type="email" class="form-control" value="hggjg@gmail.com" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+							</div>
+							<div class="mb-4  form-group">
+								<input type="text" class="form-control" placeholder="Комментарий к заказу (по желанию)"/>
+							</div>
+							<div class="modal-bottom mb-5">
+								<button  class="btn submit">Да, верно. Дальше</button>
+							</div>
+							<div class="color-grey text-xs text-center">Ваш заказ №259956553</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalData-->
+
+		<div class="modal fade" id="modalDostavka" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">
+							<div class="basket-top-center-l">
+								<div class="basket-addr" data-bs-toggle="modal" data-bs-target="#modalAddr" >
+									<div class="basket-addr-in">
+										<span class="basket-addr-span1">Никольская улица длинное, </span>
+										<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
+									</div>
+									<button class="basket-addr-btn"></button>
+								</div>
+								<div class="basket-addr-bottom">Доставка в течении дня</div>
+							</div>
+						</div>
+						<form action="#" class="form">
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Город" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="Улица" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="№ Дома" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="№ Строения/ Корпуса/ Входа" required/>
+							</div>
+							<div class="mb-4 form-group">
+								<div class="error">Некорректно введены данные для этого поля</div>
+								<input type="text" class="form-control" placeholder="№ Кв" required/>
+							</div>
+							<div class="modal-bottom">
+								<button  class="btn submit"  data-bs-toggle="modal" data-bs-target="#modalDate">Да, верно. Выбрать дату</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalDostavka-->
+
+		<div class="modal fade" id="modalLang" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false">
+			<div class="modal-dialog">
+				<div class="modal-content modal-content-small">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-title">Выберите язык</div>
+						<form action="#" class="relative z-10 text-center">
+							<div class="inline-block">
+								<label class="radio-lang">
+									<input type="radio" name="radio-lang" class="radio-lang-input" checked>
+									<span class="radio-lang-flex">
+										<span class="radio-lang-img">
+											<img src="img/lang1.svg" alt="" width="24" height="20" loading="lazy" decoding="async">
+										</span>
+										<span>Русский</span>
+									</span>
+								</label>
+								<label class="radio-lang">
+									<input type="radio" name="radio-lang" class="radio-lang-input">
+									<span class="radio-lang-flex">
+										<span class="radio-lang-img">
+											<img src="img/lang2.svg" alt="" width="24" height="20" loading="lazy" decoding="async">
+										</span>
+										<span>Latviski</span>
+									</span>
+								</label>
+								<label class="radio-lang">
+									<input type="radio" name="radio-lang" class="radio-lang-input">
+									<span class="radio-lang-flex">
+										<span class="radio-lang-img">
+											<img src="img/lang3.svg" alt="" width="24" height="20" loading="lazy" decoding="async">
+										</span>
+										<span>հայերեն</span>
+									</span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalLang-->
+		<div class="modal modal-simple modal-city fade" id="modalCity" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content overflow-hidden">
+					<button type="button" class="btn-close hidden xs:block" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-top">
+						<button type="button" class="prev-btn -mr-10" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="font-bold flex-grow text-center">Добавить адрес</div>
+					</div>
+					<div class="modal-content-in modal-content-in-bottom autoComplete-in">
+
+						<div class="modal-city-col">
+							<div id="map1" class="map">
+								<img src="img/map1.jpg" alt="" width="520" height="690" loading="lazy" decoding="async">
+							</div>
+						</div>
+						<form class="modal-city-col modal-city-col-2 form" action="#">
+							<div class="h2 md:text-2xl mb-4">
+					Добавить адрес
+				 </div>
+							<div class="flex-grow form-group">
+								<!--<input type="text" class="form-control form-control-color2 autoCompleteCity mb-6" placeholder="Город" id="autoCompleteCity"/>-->
+								<input type="text" class="form-control form-control-color2 autoCompleteStreet mb-6" placeholder="Улица" id="autoCompleteStreet" required/>
+							</div>
+							<button  class="btn btnAddAddr btn-disabled mt-4 submit" >Да, все верно</button>
+						</form>
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalCity-->
+		<!-- Modal -->
+		<div class="modal modal-white modal-buy fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-content-in">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-buy-row">
+							<div class="modal-buy-col2 mb-5 xs:mb-0 itemBuy">
+								<div class="product-info">
+									<div class="product-info-title mb-3 sm:mb-7">
+										<div>Хлеб 2я строчка. Хлеб 2я строчка.. И третья строкс ымлыовмтылвм
+						  <div class="color-grey text-base mt-1">500 г</div>
+										</div>
+										<button class="addto-favorite addto-favorite-grey ml-2 xs:hidden"></button>
+									</div>
+								</div>
+								<div class="product-info-sostav mb-2.5 py-2.5">
+									<div class="mb-2 color-grey text-sm">В 100 граммах</div>
+									<div class="flex justify-between text-xl">
+										<div>
+						  15 
+						  <div class="text-xs color-grey">Ккал</div>
+										</div>
+										<div>
+						  0,8 г
+						  <div class="text-xs color-grey">Белки</div>
+										</div>
+										<div>
+						  0,1 г
+						  <div class="text-xs color-grey">
+							 Жиры</div>
+										</div>
+										<div>
+						  2,5 г
+						  <div class="text-xs color-grey">Углеводы</div>
+										</div>
+									</div>
+								</div>
+								<div class="text-xs">
+									<div class="mb-4">
+										<div class="mb-1 color-grey font-bold sm:text-base sm:font-semibold">Состав</div>
+										<div class="read-more sm:text-sm">
+											<div class="font-semibold sm:text-sm sm:font-normal">Белки хлебных злаков отличаются недостаточным содержанием незаменимых аминокислот, особенно лизина, метионина и триптофана, причем дефицит их возрастает в хлебе, выпекаемом из муки высших сортов.</div>
+											<button class="read-more-btn"></button>
+										</div>
+									</div>
+									<div class="mb-4">
+										<div class="mb-1 color-grey font-bold sm:text-base sm:font-semibold">Срок хранения</div>
+										<div class="font-semibold sm:text-sm sm:font-normal">7 дней</div>
+									</div>
+									<div class="mb-4">
+										<div class="mb-1 color-grey font-bold sm:text-base sm:font-semibold">Условия хранения</div>
+										<div class="font-semibold sm:text-sm sm:font-normal">При температуре от +2 до +8 С</div>
+									</div>
+									<div class="mb-4">
+										<div class="mb-1 color-grey font-bold sm:text-base xs:font-semibold">Производитель</div>
+										<div class="font-semibold sm:text-sm sm:font-normal">ООО Кулинарная фабрика. алоалрыоаои илвоиыо видоидиладиа</div>
+									</div>
+									<div class="mb-4">
+										<div class="mb-1 color-grey font-bold sm:text-base sm:font-semibold">Добавьте сразу нужное количество товара в корзину</div>
+										<div class="flex flex-wrap gap-2">
+											<div class="rangedVal rangedVal-ten">
+												<button type="button" class="increaseVal increaseVal-10"></button>
+												<span class="rangedVal-text text-sm font-normal increaseVal-10">10 шт</span>
+											</div>
+											<div class="rangedVal rangedVal-ten">
+												<button type="button" class="increaseVal increaseVal-50"></button>
+												<span class="rangedVal-text text-sm font-normal increaseVal-50">50 шт</span>
+											</div>
+											<div class="rangedVal rangedVal-ten">
+												<button type="button" class="increaseVal increaseVal-100"></button>
+												<span class="rangedVal-text text-sm font-normal increaseVal-100">100 шт</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="rangedVal-product-wrap">
+									<div class="rangedVal rangedVal-product">
+										<span class="rangedVal-text rangedVal-text-through" title="111 688 ₽">111 688 ₽</span>
+										<button type="button" class="decreaseVal"></button>
+										<div class="itemBuy-num-wrap">
+											<div class="itemBuy-num">0</div>
+											<span class="mx-1">x</span></div>
+										<span class="rangedVal-text" title="589 ₽">589 ₽</span>
+										<button type="button" class="increaseVal"></button>
+									</div>
+									<button class="addto-favorite addto-favorite-big addto-favorite-grey"></button>
+								</div>
+							</div>
+							<!--end modal-buy-col2-->
+							<div class="modal-buy-col1">
+								<div class="swiper swiperModal mb-5 xs:mb-0">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="gallery-item">
+												<div class="ctg-item-cat ctg-item-cat-percent text-xs xs:text-sm">-30%</div>
+												<img src="img/ctg1.jpg" width="220" height="290" alt="" class="gallery-item-img">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="gallery-item">
+												<img src="img/ctg1.jpg" width="220" height="290" alt="" class="gallery-item-img">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="gallery-item">
+												<img src="img/ctg1.jpg" width="220" height="290" alt="" class="gallery-item-img">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+								<!--end swiperModal-->
+							</div>
+							<div class="modal-buy-col3">
+								<div class="h2 mb-4">Что еще пригодится</div>
+								<div class="swiperBuy-modal">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide ctg-item itemBuy">
+											<div>
+												<div class="ctg-item-img">
+													<img src="img/ctg-buy1.jpg" width="140" height="140" alt="">
+													<div class="ctg-item-cat ctg-item-cat-hit">Хит</div>
+													<div class="ctg-item-buynum itemBuy-num">0</div>
+												</div>
+												<div class="ctg-item-descript">
+													<div >
+														<div class="ctg-item-title">Хлеб 500 грам 3я строчка. Хлеб 500 грам 3я строчка</div>
+														<div class="color-grey my-1.5">450 г</div>
+													</div>
+												</div>
+											</div>
+											<button class="addto-favorite"></button>
+											<div class="rangedVal rangedVal-price">
+												<button type="button" class="decreaseVal"></button>
+												<span class="rangedVal-text" title="589 ₽">589 ₽</span>
+												<button type="button" class="increaseVal"></button>
+											</div>
+										</div>
+										<div class="swiper-slide ctg-item itemBuy">
+											<div>
+												<div class="ctg-item-img">
+													<img src="img/ctg-buy1.jpg" width="140" height="140" alt="">
+													<div class="ctg-item-cat ctg-item-cat-hit">Хит</div>
+													<div class="ctg-item-buynum itemBuy-num">0</div>
+												</div>
+												<div class="ctg-item-descript">
+													<div >
+														<div class="ctg-item-title">Хлеб 500 грам 3я строчка. Хлеб 500 грам 3я строчка</div>
+														<div class="color-grey my-1.5">450 г</div>
+													</div>
+												</div>
+											</div>
+											<button class="addto-favorite"></button>
+											<div class="rangedVal rangedVal-price">
+												<button type="button" class="decreaseVal"></button>
+												<span class="rangedVal-text" title="589 ₽">589 ₽</span>
+												<button type="button" class="increaseVal"></button>
+											</div>
+										</div>
+										<div class="swiper-slide ctg-item itemBuy">
+											<div>
+												<div class="ctg-item-img">
+													<img src="img/ctg-buy1.jpg" width="140" height="140" alt="">
+													<div class="ctg-item-cat ctg-item-cat-hit">Хит</div>
+													<div class="ctg-item-buynum itemBuy-num">0</div>
+												</div>
+												<div class="ctg-item-descript">
+													<div >
+														<div class="ctg-item-title">Хлеб 500 грам 3я строчка. Хлеб 500 грам 3я строчка</div>
+														<div class="color-grey my-1.5">450 г</div>
+													</div>
+												</div>
+											</div>
+											<button class="addto-favorite"></button>
+											<div class="rangedVal rangedVal-price">
+												<button type="button" class="decreaseVal"></button>
+												<span class="rangedVal-text" title="589 ₽">589 ₽</span>
+												<button type="button" class="increaseVal"></button>
+											</div>
+										</div>
+										<div class="swiper-slide ctg-item itemBuy">
+											<div>
+												<div class="ctg-item-img">
+													<img src="img/ctg-buy1.jpg" width="140" height="140" alt="">
+													<div class="ctg-item-cat ctg-item-cat-hit">Хит</div>
+													<div class="ctg-item-buynum itemBuy-num">0</div>
+												</div>
+												<div class="ctg-item-descript">
+													<div >
+														<div class="ctg-item-title">Хлеб 500 грам 3я строчка. Хлеб 500 грам 3я строчка</div>
+														<div class="color-grey my-1.5">450 г</div>
+													</div>
+												</div>
+											</div>
+											<button class="addto-favorite"></button>
+											<div class="rangedVal rangedVal-price">
+												<button type="button" class="decreaseVal"></button>
+												<span class="rangedVal-text" title="589 ₽">589 ₽</span>
+												<button type="button" class="increaseVal"></button>
+											</div>
+										</div>
+										<div class="swiper-slide ctg-item itemBuy">
+											<div>
+												<div class="ctg-item-img">
+													<img src="img/ctg-buy1.jpg" width="140" height="140" alt="">
+													<div class="ctg-item-cat ctg-item-cat-hit">Хит</div>
+													<div class="ctg-item-buynum itemBuy-num">0</div>
+												</div>
+												<div class="ctg-item-descript">
+													<div >
+														<div class="ctg-item-title">Хлеб 500 грам 3я строчка. Хлеб 500 грам 3я строчка</div>
+														<div class="color-grey my-1.5">450 г</div>
+													</div>
+												</div>
+											</div>
+											<button class="addto-favorite"></button>
+											<div class="rangedVal rangedVal-price">
+												<button type="button" class="decreaseVal"></button>
+												<span class="rangedVal-text" title="589 ₽">589 ₽</span>
+												<button type="button" class="increaseVal"></button>
+											</div>
+										</div>
+										<div class="swiper-slide ctg-item itemBuy">
+											<div>
+												<div class="ctg-item-img">
+													<img src="img/ctg-buy1.jpg" width="140" height="140" alt="">
+													<div class="ctg-item-cat ctg-item-cat-hit">Хит</div>
+													<div class="ctg-item-buynum itemBuy-num">0</div>
+												</div>
+												<div class="ctg-item-descript">
+													<div >
+														<div class="ctg-item-title">Хлеб 500 грам 3я строчка. Хлеб 500 грам 3я строчка</div>
+														<div class="color-grey my-1.5">450 г</div>
+													</div>
+												</div>
+											</div>
+											<button class="addto-favorite"></button>
+											<div class="rangedVal rangedVal-price">
+												<button type="button" class="decreaseVal"></button>
+												<span class="rangedVal-text" title="589 ₽">589 ₽</span>
+												<button type="button" class="increaseVal"></button>
+											</div>
+										</div>
+										<div class="swiper-slide ctg-item itemBuy">
+											<div>
+												<div class="ctg-item-img">
+													<img src="img/ctg-buy1.jpg" width="140" height="140" alt="">
+													<div class="ctg-item-cat ctg-item-cat-hit">Хит</div>
+													<div class="ctg-item-buynum itemBuy-num">0</div>
+												</div>
+												<div class="ctg-item-descript">
+													<div >
+														<div class="ctg-item-title">Хлеб 500 грам 3я строчка. Хлеб 500 грам 3я строчка</div>
+														<div class="color-grey my-1.5">450 г</div>
+													</div>
+												</div>
+											</div>
+											<button class="addto-favorite"></button>
+											<div class="rangedVal rangedVal-price">
+												<button type="button" class="decreaseVal"></button>
+												<span class="rangedVal-text" title="589 ₽">589 ₽</span>
+												<button type="button" class="increaseVal"></button>
+											</div>
+										</div>
+									</div>
+									<!--end swiper-wrapper-->
+								</div>
+								<!--end swiper-buy-->
+							</div>
+							<!--end modal-buy-col3--->
+							<!--end modal-buy-col1-->
+						</div>
+						<!--end row-->
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modal-->
+
+		<div class="modal modal-buy fade" id="modalBasket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"data-bs-keyboard="false" >
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-content-in min-h-80 flex flex-col">
+						<div class="div">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+							<div class="basket-addr pr-12" data-bs-toggle="modal" data-bs-target="#modalAddr">
+								<div class="basket-addr-in">
+									<span class="basket-addr-span1">Никольская улица длинное, </span>
+									<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
+								</div>
+								<button class="basket-addr-btn"></button>
+							</div>
+							<div class="basket-addr-bottom mb-4">Доставка в течении дня</div>
+						</div>
+						<div class="modal-basket-row flex-grow overflow-hidden">
+							<div class="modal-basket-col scrollbar-no">
+								<div class="basket-wrapper">
+									<div class="basket-items">
+										<div class="h2 mb-2">Ваш заказ</div>
+										<div class="message-box">
+										Некоторые товары раскупили - мы убрали их из вашей корзины
+										<button class="message-box-close"></button>
+										</div>
+										<div class="basket-item">
+											<div class="basket-img-wrap">
+												<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+											</div>
+
+											<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+										<div class="basket-title-span">500 г</div>
+												<button class="basket-remove"></button>
+											</div>
+											<div class="basket-descript">
+												<div class="rangedVal">
+													<button type="button" class="decreaseVal"></button>
+													<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+													<button type="button" class="increaseVal"></button>
+												</div>
+												<div class="text-right">
+													<div class="basket-numbers">
+														<span class="basketNumber">2</span> шт</div>
+													<span class="basket-price-through">1044</span>
+													<span class="basket-price">
+														<span class="basketPrice">1004</span> ₽</span>
+												</div>
+											</div>
+
+										</div>
+										<!--end basket-item-->
+										<div class="basket-item">
+											<div class="basket-img-wrap">
+												<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+											</div>
+
+											<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+										<div class="basket-title-span">500 г</div>
+												<button class="basket-remove"></button>
+											</div>
+											<div class="basket-descript">
+												<div class="rangedVal">
+													<button type="button" class="decreaseVal"></button>
+													<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+													<button type="button" class="increaseVal"></button>
+												</div>
+												<div class="text-right">
+													<div class="basket-numbers">
+														<span class="basketNumber">2</span> шт</div>
+													<span class="basket-price-through">1044</span>
+													<span class="basket-price">
+														<span class="basketPrice">1004</span> ₽</span>
+												</div>
+											</div>
+
+										</div>
+										<!--end basket-item-->
+										<div class="basket-item">
+											<div class="basket-img-wrap">
+												<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+											</div>
+
+											<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+										<div class="basket-title-span">500 г</div>
+												<button class="basket-remove"></button>
+											</div>
+											<div class="basket-descript">
+												<div class="rangedVal">
+													<button type="button" class="decreaseVal"></button>
+													<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+													<button type="button" class="increaseVal"></button>
+												</div>
+												<div class="text-right">
+													<div class="basket-numbers">
+														<span class="basketNumber">2</span> шт</div>
+													<span class="basket-price-through">1044</span>
+													<span class="basket-price">
+														<span class="basketPrice">1004</span> ₽</span>
+												</div>
+											</div>
+
+										</div>
+										<!--end basket-item-->
+										<div class="basket-item">
+											<div class="basket-img-wrap">
+												<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+											</div>
+
+											<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+										<div class="basket-title-span">500 г</div>
+												<button class="basket-remove"></button>
+											</div>
+											<div class="basket-descript">
+												<div class="rangedVal">
+													<button type="button" class="decreaseVal"></button>
+													<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+													<button type="button" class="increaseVal"></button>
+												</div>
+												<div class="text-right">
+													<div class="basket-numbers">
+														<span class="basketNumber">2</span> шт</div>
+													<span class="basket-price-through">1044</span>
+													<span class="basket-price">
+														<span class="basketPrice">1004</span> ₽</span>
+												</div>
+											</div>
+
+										</div>
+										<!--end basket-item-->
+										<div class="basket-item">
+											<div class="basket-img-wrap">
+												<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+											</div>
+
+											<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+										<div class="basket-title-span">500 г</div>
+												<button class="basket-remove"></button>
+											</div>
+											<div class="basket-descript">
+												<div class="rangedVal">
+													<button type="button" class="decreaseVal"></button>
+													<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+													<button type="button" class="increaseVal"></button>
+												</div>
+												<div class="text-right">
+													<div class="basket-numbers">
+														<span class="basketNumber">2</span> шт</div>
+													<span class="basket-price-through">1044</span>
+													<span class="basket-price">
+														<span class="basketPrice">1004</span> ₽</span>
+												</div>
+											</div>
+
+										</div>
+										<!--end basket-item-->
+									</div>
+									<div class="basket-empty mt-5">
+										<img src="img/basket-empty.svg" alt="" width="100" height="100" loading="lazy" decoding="async" class="basket-empty-img">
+									Ваша корзина пока пуста
+								</div>
+								</div>
+							</div>
+							<!--end modal-basket-col-->
+							<div class="modal-basket-col flex flex-col scrollbar-no">
+								<div class="h2 mb-2">Скидки и выгода</div>
+								<div class="flex-grow">
+									<nav class="">
+										<ul class="mb-4">
+											<li class="menu-nav-li">
+												<a href="#" class="menu-nav-a menu-nav-a-basket">Промокод</a>
+											</li>
+											<li class="menu-nav-li">
+												<a href="#" class="menu-nav-a menu-nav-a-basket">Оплатить новой картой</a>
+											</li>
+										</ul>
+									</nav>
+
+									<div class="flex justify-between items-center mb-7">
+										<span>Доставка</span>
+										<div class="color-grey whitespace-nowrap">
+											<span class="basketDelivery">3000</span> ₽
+									</div>
+									</div>
+									<div class="flex justify-between items-center mb-7">
+										<span>Кол-во товара</span>
+										<div class="color-grey whitespace-nowrap">
+											<span class="basketCount">357</span> шт
+									</div>
+									</div>
+								</div>
+								<div class="basket-total basket-items-after modal-bottom">
+									<div class="basket-total-span">Итого</div>
+									<div class="flex justify-center items-center">
+										<div class="basket-price-through text-xl mr-2.5">2 478 ₽</div>
+										<span class="basketTotal">2 458</span> ₽
+								</div>
+									<button class="btn mt-4 font-normal">Продолжить
+									<div class="btn-span">К адресу и оплате</div>
+									</button>
+								</div>
+							</div>
+							<!--end modal-basket-col-->
+						</div>
+						<!--end row-->
+					</div>
+				</div>
+				<!--end modal-content-->
+			</div>
+			<!--end modal-dialog-->
+		</div>
+		<!--end modalBasket-->
+
+		<!--<a href="https://youtu.be/FZSi1bK-BRM" data-fslightbox="gallery2" class="gallery_item gallery_item--video mb-4" aria-label="Video1">
+			  <img src="img/video1.jpg" alt="" loading="lazy" decoding="async" style="background-size: cover; background-image: none;" class="absolute inset-0 object-cover w-full h-full z-10">
+		   </a>-->
+
+		<!--<script src="js/jquery-3.7.1.min.js"></script>-->
+		<!--<script src="js/i18n/ru/countries.js" type="module"></script>
+	<script src="js/i18n/ru/index.js" type="module"></script>
+	<script src="js/i18n/ru/interface.js" type="module"></script>-->
+		<!--<script src="js/fslightbox.js"></script>-->
+		<script src="js/star-rating.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/base-component.js" type="module"></script>
+		<script src="js/modal.js" type="module"></script>
+		<script src="js/index.js"></script>
+		<script src="js/intlTelInput.min.js"></script>
+		<script src="js/autoComplete.min.js"></script>
+		<script src="js/datepicker.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/script.js"></script>
+
+		<!--<script src="https://api-maps.yandex.ru/2.0.31/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
+  <script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+	//Добавляем карту в страницу контактов
+	
+	   // Дождёмся загрузки API и готовности DOM.
+		function init () {
+			var myMap1 = new ymaps.Map('map1', {
+					center: [56.937786520699106,24.204901212303156],
+					zoom: 18
+			});
+			
+			var placemark1 = new ymaps.Placemark([56.937786520699106,24.204901212303156], {
+				balloonContent: '1'
+			}, {
+				// Опции.
+				 // Необходимо указать данный тип макета.
+				 iconLayout: 'default#image',
+				 // Своё изображение иконки метки.
+				 iconImageHref: 'img/ballon.png',
+				 // Размеры метки.
+				 iconImageSize: [61, 75],
+				 // Смещение левого верхнего угла иконки относительно
+				 // её "ножки" (точки привязки).
+				 iconImageOffset: [-30, -75],
+				 balloonCloseButton: true,                         
+				 hideIconOnBalloonOpen : true
+			});
+			
+			myMap1.controls
+			.add('mapTools', {right:5, bottom:35})  //Стандартные кнопки
+			.add('zoomControl', {right:5, top:50})  //Изменение масштаба
+			.add('typeSelector',  {left:45, bottom:10});  // Типы карт
+			
+			myMap1.geoObjects.add(placemark1);
+			
+			var placemark2 = new ymaps.Placemark([5.734046, 37.588628], {
+				balloonContent: '2'
+			});
+
+			myMap1.geoObjects.add(placemark2);
+			
+			myMap1.behaviors.disable("scrollZoom");
+			 
+		}
+		
+		ymaps.ready(init);
+		
+
+						
+	});
+				
+
+
+  </script>-->
+
+		<!--<a href="https://youtu.be/FZSi1bK-BRM" data-fslightbox="gallery2" class="gallery_item gallery_item--video mb-4" aria-label="Video1">
+			  <img src="img/video1.jpg" alt="" loading="lazy" decoding="async" style="background-size: cover; background-image: none;" class="absolute inset-0 object-cover w-full h-full z-10">
+		   </a>-->
+
+	</body>
+</html>
