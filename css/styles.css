@@ -2751,7 +2751,10 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  min-height: calc(100vh - 70px);
+  max-height: calc(100vh - 70px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (min-width: 992px) {
