@@ -1641,14 +1641,15 @@ input[type=number]::-webkit-inner-spin-button {
 .rangedVal{
   border-radius: 50px;
   padding: 6px 10px;
-  width: 96px;
+  width: 100%;
   height: 32px;
   background: var(--svetlo-seryy);
   display: flex;
   align-items:center;
+  justify-content: center;
 }
 .rangedVal-price, .rangedVal-ten{
-  width: min-content;
+  width: 100%;
   font-size: 12px;
   font-weight: 600;
   column-gap:5px;

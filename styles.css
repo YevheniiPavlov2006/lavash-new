@@ -904,11 +904,13 @@ input[type=number]::-webkit-inner-spin-button {
   background: #f2f2f2;
   overflow: hidden;
   position: relative;
+  
+  width: 100%;
 }
 .swiperBuy .ctg-item-img img, .swiperBuy-modal .ctg-item-img img, .ctg-buy .ctg-item-img img {
   position: absolute;
   object-fit: cover;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   max-width: 300px;
   margin: 0 auto;
@@ -1876,15 +1878,16 @@ input[type=number]::-webkit-inner-spin-button {
 .rangedVal {
   border-radius: 50px;
   padding: 6px 10px;
-  width: 96px;
+  width: 100%;
   height: 32px;
   background: var(--svetlo-seryy);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .rangedVal-price, .rangedVal-ten {
-  width: min-content;
+  width: 100%;
   font-size: 12px;
   font-weight: 600;
   column-gap: 5px;

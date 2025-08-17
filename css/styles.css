@@ -2284,6 +2284,10 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: normal;
 }
 
+.ctg-item-descript .color-grey {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .swiperBuy .ctg-item-descript, .swiperBuy-modal .ctg-item-descript, .ctg-buy .ctg-item-descript {
     font-size: 14px;
@@ -3391,16 +3395,17 @@ input[type=number]::-webkit-inner-spin-button {
 .rangedVal {
   border-radius: 50px;
   padding: 6px 10px;
-  width: 96px;
+  width: 100%;
   height: 32px;
   background: var(--svetlo-seryy);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .rangedVal-price, .rangedVal-ten {
   width: -moz-min-content;
-  width: min-content;
+  width: 100%;
   font-size: 12px;
   font-weight: 600;
   -moz-column-gap: 5px;
@@ -6450,6 +6455,7 @@ button.swiper-pagination-bullet {
 
 [data-bs-toggle=modal] {
   cursor: pointer;
+  width: 100%;
 }
 
 .modal {
