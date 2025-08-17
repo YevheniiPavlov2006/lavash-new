@@ -1217,7 +1217,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #e8e8e8;
+  background: #fff;
   margin: 0 -15px;
 }
 
@@ -1682,7 +1682,7 @@ input[type=number]::-webkit-inner-spin-button {
 .menu-btn, .rounded-icos, .addto-favorite, .profile-images-li {
   overflow: hidden;
   border-radius: 100%;
-  background: #FFF;
+  background: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1927,7 +1927,7 @@ input[type=number]::-webkit-inner-spin-button {
   background: transparent;
   border: 0;
   height: 40px;
-  background: #FFF;
+  background: #f2f2f2;
   border-radius: 100px;
   padding-left: 44px;
   font-family: "Inter", "SF UI Text";
