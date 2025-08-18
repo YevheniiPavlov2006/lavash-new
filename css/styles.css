@@ -1681,7 +1681,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .menu-btn, .rounded-icos, .addto-favorite, .profile-images-li {
   overflow: hidden;
-  border-radius: 100%;
+  border-radius: 50%;
   background: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -2435,6 +2435,11 @@ input[type=number]::-webkit-inner-spin-button {
   color: #FFF;
   position: relative;
   z-index: 100;
+}
+
+.rounded-icos.w100 {
+  width: 40px;
+  aspect-ratio: 1;
 }
 
 .ctg-item-cat {
@@ -6457,6 +6462,7 @@ button.swiper-pagination-bullet {
   cursor: pointer;
   width: 100%;
 }
+
 
 .modal {
   --bs-modal-zindex: 1055;
