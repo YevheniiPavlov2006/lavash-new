@@ -2682,6 +2682,9 @@ input[type=number]::-webkit-inner-spin-button {
 .column-center {
   grid-column-start: 3;
   grid-column-end: 8;
+  position: relative;
+
+  background-color: #fff;
 }
 .column-center::-webkit-scrollbar {
   display: none;
@@ -2836,10 +2839,13 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  max-height: calc(100vh - 70px);
-
-  overflow-y: auto;
+}
+.column-center-scrollable {
   overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100vh - 70px);
+  margin-top: -30px;
+  padding-top: 45px;
 }
 
 @media (min-width: 992px) {
@@ -2915,11 +2921,12 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: center;
   border-radius: 20px;
   justify-content: space-between;
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {
   .delivery-send {
-    padding: 10px 15px;
+    padding: 15px 15px;
   }
 }
 
