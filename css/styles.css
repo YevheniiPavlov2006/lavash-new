@@ -2887,7 +2887,6 @@ input[type=number]::-webkit-inner-spin-button {
 @media (min-width: 992px) {
   .column-left-cabinet .menu-nav-a {
     font-size: 14px;
-    padding: 5px 10px;
   }
 }
 
@@ -3068,14 +3067,18 @@ input[type=number]::-webkit-inner-spin-button {
   max-height: inherit;
 }
 
+
 .nav-icos {
   width: 35px;
   height: 35px;
   flex-shrink: 0;
   border-radius: 6px;
-  background: var(--seryy-fon-kategorii);
   position: relative;
-  margin-right: 12px;
+  background-color: var(--seryy-fon-kategorii);
+
+  margin-right: 10px;
+}
+.nav-icos-1 {
 }
 
 @media (min-width: 1280px) {
@@ -3133,7 +3136,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .accordion-item.show .nav-icos {
-  height: 30px;
+  aspect-ratio: 1;
   margin-right: 12px;
 }
 
