@@ -2503,6 +2503,12 @@ input[type=number]::-webkit-inner-spin-button {
   width: 40px;
   aspect-ratio: 1;
 }
+.ctg-item div {
+  width: 100%;
+}
+.ctg-item-descript div {
+  width: 100%;
+}
 
 .ctg-item-cat {
   font-size: 10px;
@@ -2513,6 +2519,12 @@ input[type=number]::-webkit-inner-spin-button {
   bottom: 10px;
   left: 10px;
   z-index: 100;
+
+  display: flex;
+  justify-content: center;
+
+  max-width: 60px;
+
 }
 
 @media (min-width: 768px) {
@@ -2706,6 +2718,7 @@ input[type=number]::-webkit-inner-spin-button {
   position: fixed;
   left: 0;
   top: 100px;
+  width: 100%;
 }
 .main-columns {
   display: grid;
@@ -6566,7 +6579,6 @@ button.swiper-pagination-bullet {
 
 [data-bs-toggle=modal] {
   cursor: pointer;
-  width: 100%;
 }
 
 
