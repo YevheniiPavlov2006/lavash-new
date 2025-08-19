@@ -1229,6 +1229,8 @@ html, body {
   grid-column-start: 3;
   grid-column-end: 8;
 }
+.header .main-search-header:hover {
+}
 .header-in .flex {
   grid-column-start: 8;
   grid-column-end: 10;
@@ -1761,6 +1763,9 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 20px;
   flex: 1;
 }
+.header .rounded-icos:hover {
+  background-color: #ececec;
+}
 .signUp-button {
   font-size: 16px;
   font-weight: 600;
@@ -1984,11 +1989,15 @@ input[type=number]::-webkit-inner-spin-button {
   background: transparent;
   border: 0;
   height: 40px;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border-radius: 100px;
   padding-left: 44px;
   font-family: "Inter", "SF UI Text";
   z-index: 90;
+  outline: none;
+}
+.main-search .form-control:hover {
+  background-color: #ebeaea;
 }
 
 .main-search-columns-wrapper {
