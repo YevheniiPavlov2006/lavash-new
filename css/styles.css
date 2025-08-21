@@ -8926,6 +8926,7 @@ button.swiper-pagination-bullet {
 .swiper-button-next {
   background: url(../img/slider-button-next.svg);
   height: 60px;
+  width: 30px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -8933,6 +8934,7 @@ button.swiper-pagination-bullet {
 .swiper-button-prev {
   background: url(../img/slider-button-prev.svg);
   height: 60px;
+  width: 30px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
