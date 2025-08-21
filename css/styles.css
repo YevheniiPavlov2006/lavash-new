@@ -2168,7 +2168,7 @@ input[type=number]::-webkit-inner-spin-button {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin: 0 -5px;
-  padding: 20px;
+  padding: 10px;
 }
 @media (max-width:600px) {
   .ctg-simple {
@@ -2181,11 +2181,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0 5px 10px;
 }
 
-@media (min-width: 375px) {
-  .ctg-simple .ctg-item {
 
-  }
-}
 
 @media (min-width: 575px) {
   .ctg-simple {
@@ -2213,19 +2209,19 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (min-width: 1280px) {
   .ctg-simple {
-    grid-template-columns: 1fr 1fr 1fr 1f;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 1380px) {
   .ctg-simple {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 1600px) {
   .ctg-simple {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -2258,7 +2254,7 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 16px;
 }
 .ctg-item-card:hover {
-  box-shadow: 0 0 1px 1px #e1e1e1;
+  box-shadow: 0 0 0px 1px #e1e1e1;
 }
 .ctg-card-title {
   font-size: 16px;
@@ -2288,6 +2284,18 @@ input[type=number]::-webkit-inner-spin-button {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+@media(max-width:500px) {
+  .ctg-item-card {
+    padding: 10px 7px;
+  }
+  .ctg-card-title {
+    font-size: 14px;
+  }
+  .ctg-card-img {
+    height: 120px;
+  }
 }
 
 .swiperBuy .ctg-item-img, .swiperBuy-modal .ctg-item-img, .ctg-buy .ctg-item-img {
