@@ -2928,6 +2928,10 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: -30px;
   padding-top: 45px;
 }
+.column-center-scrollable::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
 
 @media (min-width: 992px) {
   .column-center {
