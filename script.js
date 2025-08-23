@@ -33,25 +33,24 @@ body.addEventListener('click', function(event){
 });
 
 // Добавляем обработчик события 'click' для каждого аккордеона
-accordions.forEach(accordion => {
-    accordion.addEventListener('click', (event) => {
-        if (event.target.classList.contains('accordion-button') || event.target.closest('.accordion-button')) {
-            const accordionItem = event.target.closest('.accordion-item');
-    
-            if (accordionItem) {
-                const allAccordionItems = accordion.querySelectorAll('.accordion-item');
-        
-                allAccordionItems.forEach(item => {
-                    if (item !== accordionItem) {
-                        item.classList.remove('show', 'collapsing');
-                    }
-                });
+const accordions = document.querySelectorAll('.accordion');
 
-                // Переключаем класс 'show' у текущего элемента аккордеона
-                accordionItem.classList.toggle('show');
-            }
-        }
+accordions.forEach(accordion => {
+accordion.addEventListener('click', (event) => {
+    const button = event.target.closest('.accordion-button');
+    if (!button) return;
+
+    const accordionItem = button.closest('.accordion-item');
+    if (!accordionItem) return;
+
+    // закрываем другие пункты
+    accordion.querySelectorAll('.accordion-item').forEach(item => {
+    if (item !== accordionItem) item.classList.remove('show');
     });
+
+    // переключаем текущий
+    accordionItem.classList.toggle('show');
+});
 });
 
 window.addEventListener('resize', function() {

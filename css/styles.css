@@ -3095,10 +3095,12 @@ input[type=number]::-webkit-inner-spin-button {
   flex-shrink: 0;
   border-radius: 6px;
   position: relative;
+  background: url(../img/arrow-down.svg) no-repeat center;
   background-color: var(--seryy-fon-kategorii);
 
   margin-right: 10px;
 }
+
 
 
 @media (min-width: 1280px) {
@@ -3160,13 +3162,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin-right: 12px;
 }
 
-.accordion-item.show .nav-icos-img {
-  display: none;
-}
 
-.accordion-item.show .nav-icos-arrow {
-  display: block;
-}
 
 .basket-addr {
   white-space: nowrap;
@@ -9451,3 +9447,52 @@ button.swiper-pagination-bullet {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+
+
+
+/*============
+
+/* базовое состояние */
+.nav-icos {
+  position: relative;
+  width: 50px;   /* размер под твою основную картинку */
+  height: 50px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+/* Основная картинка */
+.nav-icos-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.2s ease;
+  z-index: 1; /* ниже стрелки */
+}
+
+/* Стрелка */
+.nav-icos-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 7px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 20000; /* выше картинки */
+  transition: opacity 0.2s ease;
+}
+
+/* Аккордеон открыт + hover — стрелка появляется, картинка исчезает */
+.accordion-item.show .accordion-button:hover .nav-icos-img { opacity: 0; }
+.accordion-item.show .accordion-button:hover .nav-icos-arrow { opacity: 1; }
+
+/* Остальное состояние */
+.accordion-item.show .nav-icos-img { opacity: 1; }
+.accordion-item.show .nav-icos-arrow { opacity: 0; }
+
+
+.accordion-button::after { content: none !important; }
