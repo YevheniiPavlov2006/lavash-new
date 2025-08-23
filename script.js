@@ -2,7 +2,6 @@ let body = document.querySelector('body');
 let page = document.querySelector('.page');
 let menuBtn = document.querySelector('.menu-btn');
 let overlay = document.createElement('div');
-const accordions = document.querySelectorAll('.accordion');
     
 overlay.classList.add('site-overlay');
 if (page){
