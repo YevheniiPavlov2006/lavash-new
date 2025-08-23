@@ -3095,10 +3095,13 @@ input[type=number]::-webkit-inner-spin-button {
   flex-shrink: 0;
   border-radius: 6px;
   position: relative;
+  background-color: var(--seryy-fon-kategorii);
+  
+  margin-right: 10px;
+}
+.accordion-item .nav-icos {
   background: url(../img/arrow-down.svg) no-repeat center;
   background-color: var(--seryy-fon-kategorii);
-
-  margin-right: 10px;
 }
 
 
