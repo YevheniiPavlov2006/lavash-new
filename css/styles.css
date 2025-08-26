@@ -2012,6 +2012,11 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
 }
+@media(max-width:992px){
+  .main-search-columns-wrapper {
+    top: -60px;
+  }
+}
 
 .main-search-columns-hidden {
   display: none;
@@ -2513,7 +2518,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 18px;
   color: #FFF;
   position: relative;
-  z-index: 110;
+  z-index: 11 0;
 }
 
 .rounded-icos.w100 {
@@ -2583,21 +2588,7 @@ input[type=number]::-webkit-inner-spin-button {
   background: #C88ECD;
 }
 
-.ctg-item-in {
-  padding-bottom: 131%;
-  height: 0;
-  position: relative;
-}
-
-.ctg-item-in-in {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-}
+ 
 
 .main-banner-shadow {
   position: absolute;
@@ -2938,9 +2929,18 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: -30px;
   padding-top: 45px;
 }
+
 .column-center-scrollable::-webkit-scrollbar {
   display: none;
   width: 0;
+}
+
+@media (max-width:992px){
+  .column-center-scrollable {
+    margin-top: 15px;
+    padding-top: 45px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -3747,6 +3747,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   margin: 0;
 }
+
 
 .searchActive .main-search-columns-hidden, .cabinetActive .main-search-columns-hidden {
   display: flex;
@@ -9509,3 +9510,57 @@ button.swiper-pagination-bullet {
 
 
 .accordion-button::after { content: none !important; }
+
+
+
+/*=====================*/
+
+.ctg-item-in {
+  padding-bottom: 131%;
+  height: 0;
+  position: relative;
+}
+
+.ctg-item-in-in {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ctg-item-img {
+  flex-grow: 1;
+  position: relative;
+  z-index: 90;
+}
+
+.ctg-item-img img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 90;
+}
+
+.main-banner-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.ctg-item-title{
+  padding:20px 20px 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color:#FFF;
+  position: relative;
+  z-index: 110;
+}
+
