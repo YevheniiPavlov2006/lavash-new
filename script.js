@@ -884,6 +884,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Находим все элементы с классом 'cabinetBtn'
     const cabinetBtns = document.querySelectorAll('.cabinetBtn');
+    const searchLinePosition = document.querySelectorAll('.column-center-scrollable')
 
     // Для каждого найденного элемента 'cabinetBtn'
     cabinetBtns.forEach(function(cabinetBtn) {
