@@ -949,12 +949,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const searchBar = document.getElementById("searchBar");
 
-window.addEventListener("scroll", () => {
-  const rect = searchBar.getBoundingClientRect();
-  if (rect.top <= 0) {
-    searchBar.classList.add("fixed");
-  } else {
-    searchBar.classList.remove("fixed");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   const rect = searchBar.getBoundingClientRect();
+//   if (rect.top <= 0) {
+//     searchBar.classList.add("fixed");
+//   } else {
+//     searchBar.classList.remove("fixed");
+//   }
+// });
 

@@ -2017,12 +2017,12 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
 }
-.main-search-columns-wrapper.fixed {
+/* .main-search-columns-wrapper.fixed {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-}
+} */
 @media(max-width:992px){
   .main-search-columns-wrapper {
     top: 0px;
@@ -2959,8 +2959,8 @@ input[type=number]::-webkit-inner-spin-button {
   .column-center-scrollable {
     margin-top: 15px;
     padding-top: 5px;
-    overflow-y: hidden;
-    height: 100%;
+    overflow-y: auto;
+    height: 100vh;
   }
 }
 
@@ -3051,7 +3051,6 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: center;
   border-radius: 20px;
   z-index: 1000;
-  
 }
 @media (max-width: 992px) {
   .delivery-send {
