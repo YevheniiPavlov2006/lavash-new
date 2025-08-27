@@ -941,3 +941,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 });
+
+
+
+
+/*==================================================scroll-adaptive================================*/
+

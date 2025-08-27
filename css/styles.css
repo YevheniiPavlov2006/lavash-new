@@ -1863,8 +1863,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 @media (min-width: 992px) {
-  .header {
-  }
 
   .header-2 {
     display: block;
@@ -2738,6 +2736,15 @@ input[type=number]::-webkit-inner-spin-button {
   top: 100px;
   width: 100%;
 }
+@media (max-width:992px) {
+  .main-content {
+    position: relative;
+    top: 450px;
+    overflow: auto;
+    min-height: 100dvh; 
+  }
+  
+}
 .main-columns {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -2753,11 +2760,17 @@ input[type=number]::-webkit-inner-spin-button {
   position: relative;
 
   background-color: #fff;
+  z-index: 100000000000000;
 }
 @media (max-width:992px) {
   .column-center {
     grid-column-start: 1;
     grid-column-end: 13;
+
+    position: relative;
+    overflow: auto;
+    height: 100dvh;
+    overscroll-behavior: contain;
   }
   .column-center-scrollable {
     padding: 0 15px;
@@ -2922,9 +2935,8 @@ input[type=number]::-webkit-inner-spin-button {
   align-self: stretch;
 }
 .column-center-scrollable {
-  overflow-x: hidden;
-  overflow-y: auto;
-  max-height: calc(100vh - 70px);
+  overflow: auto;
+  height: calc(100vh - 70px);
   margin-top: -30px;
   padding-top: 45px;
 }
@@ -2939,12 +2951,11 @@ input[type=number]::-webkit-inner-spin-button {
     margin-top: 15px;
     padding-top: 5px;
   }
-
 }
+
 
 @media (min-width: 992px) {
   .column-center {
-    
     background: none;
     min-height: auto;
   }
@@ -2970,12 +2981,26 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 
+.column-center-1.adaptive {
+  display: none;
+  margin-top: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
 @media (min-width: 992px) {
   .column-center-1 {
     order: 2;
     padding: 15px 15px 1px;
     background: #FFF;
     border-radius: 20px 20px 0 0;
+  }
+}
+@media(max-width:992px) {
+  .column-center-1.adaptive {
+    display: block;
+  }
+  .main-content .column-center-1 {
+    display: none;
   }
 }
 
@@ -3278,6 +3303,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .basket-top-center{
+  margin-top: 20px;
   margin-bottom: 1.75rem;
   display: flex;
   justify-content: space-between;
@@ -9564,3 +9590,11 @@ button.swiper-pagination-bullet {
   z-index: 110;
 }
 
+
+
+
+/*===============================swiper==============================*/
+.swiper-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
