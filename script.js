@@ -947,52 +947,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*==================================================scroll-adaptive================================*/
 
-const parent = document.querySelector('.main-content');
-const child  = document.querySelector('.column-center-scrollable ');
+const searchBar = document.getElementById("searchBar");
 
-
-function updateChildScroll() {
-  if (window.innerWidth >= 992) {
-    // десктоп: всегда скролл
-    child.classList.remove('locked');
+window.addEventListener("scroll", () => {
+  const rect = searchBar.getBoundingClientRect();
+  if (rect.top <= 0) {
+    searchBar.classList.add("fixed");
   } else {
-    // мобайл: следим за положением родителя
-    if (parent.scrollTop === 0) {
-      child.classList.remove('locked'); // родитель вверху → скролл разрешён
-    } else {
-      child.classList.add('locked');    // родитель ушёл вниз → скролл запрещён
-      child.scrollTop = 0;
-    }
+    searchBar.classList.remove("fixed");
   }
-}
-
-// wheel → отдаём прокрутку родителю, если скролл заблокирован
-child.addEventListener('wheel', (e) => {
-  if (window.innerWidth < 992 && child.classList.contains('locked')) {
-    parent.scrollTop += e.deltaY;
-    e.preventDefault();
-  }
-}, { passive: false });
-
-// touch для мобилок
-let startY = 0;
-child.addEventListener('touchstart', (e) => {
-  if (window.innerWidth < 992) {
-    startY = e.touches[0].clientY;
-  }
-}, { passive: true });
-
-child.addEventListener('touchmove', (e) => {
-  if (window.innerWidth < 992 && child.classList.contains('locked')) {
-    const deltaY = startY - e.touches[0].clientY;
-    parent.scrollTop += deltaY;
-    startY = e.touches[0].clientY;
-    e.preventDefault();
-  }
-}, { passive: false });
-
-// инициализация
-updateChildScroll();
-window.addEventListener('resize', updateChildScroll);
-parent.addEventListener('scroll', updateChildScroll);
+});
 
