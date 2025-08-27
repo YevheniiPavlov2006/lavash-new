@@ -2115,10 +2115,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .ctg {
   display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
   overflow: hidden;
-  padding: 0 15px 30px;
   position: relative;
 }
 
@@ -2739,7 +2736,8 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width:992px) {
   .main-content {
     position: relative;
-    top: 450px;
+    top: 450px;       /* твой отступ */
+    height: calc(100vh - 450px);
     overflow: auto;
     min-height: 100dvh; 
   }
@@ -2769,7 +2767,7 @@ input[type=number]::-webkit-inner-spin-button {
 
     position: relative;
     overflow: auto;
-    height: 100dvh;
+    height: 100vh;
     overscroll-behavior: contain;
   }
   .column-center-scrollable {
@@ -9594,7 +9592,7 @@ button.swiper-pagination-bullet {
 
 
 /*===============================swiper==============================*/
-.swiper-wrapper {
+.swiperCtg {
   max-width: 100%;
   overflow: hidden;
 }
