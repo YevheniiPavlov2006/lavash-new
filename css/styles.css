@@ -3801,9 +3801,15 @@ input[type=number]::-webkit-inner-spin-button {
     left: 15px;
     margin-top: -5px;
   }
-
 }
-
+@media(max-width:500px){
+  .main-search-columns-wrapper.adaptiveSticky {
+    display: block;
+    max-width: 100%;
+    left: 10px;
+    margin-top: -5px;
+  }
+}
 
 .searchActive .main-search-columns-hidden, .cabinetActive .main-search-columns-hidden {
   display: flex;
