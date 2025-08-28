@@ -2749,8 +2749,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width:992px) {
   .main-content {
     position: relative;
-    top: 450px;       /* твой отступ */
-    overflow: auto;
+    margin-top: 370px;
     min-height: 100dvh; 
   }
 }
@@ -2777,7 +2776,6 @@ input[type=number]::-webkit-inner-spin-button {
     grid-column-end: 13;
 
     position: relative;
-    overflow: auto;
     overscroll-behavior: contain;
   }
   .column-center-scrollable {
@@ -2959,8 +2957,8 @@ input[type=number]::-webkit-inner-spin-button {
   .column-center-scrollable {
     margin-top: 15px;
     padding-top: 5px;
-    overflow-y: auto;
-    height: 100vh;
+    overflow-y: hidden;
+    height: 100%;
   }
 }
 
@@ -3782,6 +3780,28 @@ input[type=number]::-webkit-inner-spin-button {
   top: -20px;
   width: 100%;
   margin: 0;
+}
+.main-search-columns-wrapper.adaptiveSticky {
+    display: none;
+    position: sticky;
+    top: 60px;
+}
+@media(max-width: 992px) {
+  .adaptive-column-center-sticky {
+    position: sticky;
+    top: -1px;
+    z-index: 1000000000;
+  }
+  .main-search-columns-wrapper.search-main {
+    display: none;
+  }
+  .main-search-columns-wrapper.adaptiveSticky {
+    display: block;
+    max-width: 100%;
+    left: 15px;
+    margin-top: -5px;
+  }
+
 }
 
 
