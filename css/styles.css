@@ -9622,9 +9622,9 @@ button.swiper-pagination-bullet {
 }
 
 .ctg-item-title{
-  padding:20px 20px 10px;
-  font-weight: bold;
-  font-size: 16px;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 18px;
   color:#FFF;
   position: relative;
   z-index: 110;
