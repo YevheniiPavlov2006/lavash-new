@@ -3450,7 +3450,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1300px) {
   .basket-item {
     grid-template-columns: 80px 1fr;
   }
@@ -3474,7 +3474,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1300px) {
   .basket-img-wrap {
     width: 80px;
     height: 80px;
@@ -3492,8 +3492,20 @@ input[type=number]::-webkit-inner-spin-button {
   grid-row: 2;
   grid-column: 2/3;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
+}
+
+.basket-descript {
+  position: relative;
+}
+.basket-descript::before {
+  content: "500г";
+  position: absolute;
+  top: -8px;
+  font-size: 10px;
+  opacity: 0.7;
+  left: 0;
 }
 
 @media (min-width: 992px) {
@@ -3501,7 +3513,7 @@ input[type=number]::-webkit-inner-spin-button {
     grid-column: 2/3;
   }
   .basket-descript .rangedInput {
-    font-size: 10px;
+    font-size: 12px;
   }
   .basket-descript .rangedVal {
     height: 26px;
@@ -3575,6 +3587,9 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 @media(max-width:1200px) {
+  .basket-descript::before {
+    display: none;
+  }
   .basket-descript {
     grid-column: 1/3;
   }
@@ -3738,8 +3753,8 @@ input[type=number]::-webkit-inner-spin-button {
 .rangedInput {
   flex-grow: 1;
   text-align: center;
-  width: 100%;
-  font-size: 13px;
+  width: 30px;
+  font-size: 14px;
   color: #7e9f2c;
   font-weight: 600;
   background: none;
