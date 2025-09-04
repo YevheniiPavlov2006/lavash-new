@@ -1099,6 +1099,7 @@ video {
 
 :root {
   --chernyy: #404040;
+  --black-800: #595959;
   --seryy-fon-kategorii: #f2f2f2;
   --svetlo-seryy: #e9e9e9;
   --standartnyy-seryy: #d9d9d9;
@@ -2513,7 +2514,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .itemBuy.ctg-item-increased .rangedVal-ten .rangedVal-text {
-  color: var(--temno-olivkovyy);
 }
 
 .itemBuy-num-wrap {
@@ -2524,7 +2524,7 @@ input[type=number]::-webkit-inner-spin-button {
   position: relative;
   width: 230px;
   margin-right: 9px;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -2557,11 +2557,13 @@ input[type=number]::-webkit-inner-spin-button {
 .ctg-item-cat {
   font-size: 10px;
   padding: 0 5px;
-  border-radius: 10px;
-  background: #ceeafd;
+  border-radius: 15px;
+  background: var(--chernyy) !important;
+  color: white !important;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  font-weight: 600;
+  bottom: 8px;
+  left: 8px;
   z-index: 100;
 
   display: flex;
@@ -3404,6 +3406,7 @@ input[type=number]::-webkit-inner-spin-button {
   overflow: auto;
   position: relative;
   z-index: 90;
+  flex: 1 1 auto;
 }
 
 @media (min-width: 992px) {
@@ -3711,11 +3714,10 @@ input[type=number]::-webkit-inner-spin-button {
   -moz-column-gap: 5px;
        column-gap: 5px;
   line-height: 20px;
-  color: var(--temno-olivkovyy);
   max-width: 100%;
 }
 .ctg-item .rangedVal-price {
-  background-color: rgba(160, 207, 40, 0.25) !important;
+  background-color: rgba(160, 207, 40, 0.15) !important;
 }
 
 @media (min-width: 768px) {
@@ -3741,7 +3743,8 @@ input[type=number]::-webkit-inner-spin-button {
 .rangedVal-text-through {
   position: relative;
   font-weight: normal;
-  color: var(--temno-seryy);
+  font-weight: 600;
+  color: rgba(126, 159, 44, 0.5);
 }
 
 .rangedVal-text-through:after {
@@ -3750,7 +3753,7 @@ input[type=number]::-webkit-inner-spin-button {
   left: 0;
   right: 0;
   top: 50%;
-  border-top: 1px solid var(--red);
+  border-top: 1px solid var(--chernyy);
 }
 
 .rangedVal-text-through + .decreaseVal {
@@ -4016,9 +4019,10 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .addto-favorite {
-  width: 30px;
-  height: 30px;
-  background: #FFF url(../img/favorite-ico.svg) no-repeat center;
+  width: 27px;
+  height: 27px;
+  background: url(../img/favorite-ico.svg) no-repeat center;
+  background-color: rgba(126, 159, 44, 0.08);
   border-radius: 100px;
   z-index: 110;
   position: relative;
@@ -6321,6 +6325,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   --swiper-navigation-size: 44px;
   --swiper-navigation-width: 48px;
   --swiper-navihation-height: 100px;
+}
+
+
+.swiperBuy .swiper-button-next, .swiper-button-prev {
+  top: 30%;
 }
 
 .swiper-button-next, .swiper-button-prev {
