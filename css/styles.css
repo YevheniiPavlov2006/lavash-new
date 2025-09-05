@@ -2159,6 +2159,19 @@ input[type=number]::-webkit-inner-spin-button {
   width: auto !important;
 }
 
+.ctg-item .rangedVal-price.item-button-ended {
+  min-width: 100%;
+}
+.item-button-ended div {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  height: 100%;
+  text-align: center;
+  color: #989898;
+
+}
+
 .ctg .swiper-button-next, .ctg .swiper-button-prev {
   display: none;
 }
