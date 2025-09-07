@@ -2002,7 +2002,7 @@ input[type=number]::-webkit-inner-spin-button {
   z-index: 800;
   background: #FFF;
   margin: 0 -15px -1px;
-  padding: 15px 10px;
+  padding: 15px;
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -2974,8 +2974,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (max-width:992px){
   .column-center-scrollable {
-    margin-top: 15px;
-    padding-top: 5px;
     overflow-y: hidden;
     height: 100%;
   }
@@ -3052,8 +3050,12 @@ input[type=number]::-webkit-inner-spin-button {
 .working-time-wrap .working-time {
   background: #EEEEEE;
   margin: 0 15px;
-
-
+}
+@media (max-width:992px){
+  .working-time-wrap .working-time {
+    background: #EEEEEE;
+    margin: 0;
+  }
 }
 
 @media (min-width: 992px) {
