@@ -117,11 +117,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         breakpoints: {
             992: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 freeMode: false
             },
-            1100: {
-                slidesPerView: 3,
+            1250: {
+                slidesPerView: 4,
                 freeMode: false
             },
             1480: {

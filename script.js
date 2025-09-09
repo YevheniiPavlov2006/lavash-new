@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let swiper1 = new Swiper(".swiperCtg", {
         slidesPerView: "auto",
-        spaceBetween: 10,
+        spaceBetween: 20,
         freeMode: true,
         loop: false,
         navigation: {
@@ -947,14 +947,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*==================================================scroll-adaptive================================*/
 
-const searchBar = document.getElementById("searchBar");
-
-// window.addEventListener("scroll", () => {
-//   const rect = searchBar.getBoundingClientRect();
-//   if (rect.top <= 0) {
-//     searchBar.classList.add("fixed");
-//   } else {
-//     searchBar.classList.remove("fixed");
-//   }
-// });
 
