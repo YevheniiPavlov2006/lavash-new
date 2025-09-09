@@ -4376,7 +4376,7 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   width: 28px;
   height: 28px;
-  background: #FFF;
+  background: #E0E0E0;
   border-radius: 6px;
 }
 
@@ -4384,10 +4384,39 @@ input[type=number]::-webkit-inner-spin-button {
   order: 20;
   padding: 20px 10px;
   background-color: #F2F2F2;
+  margin-bottom: 100px;
+}
+
+.footer-euro-part {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 15px;
+}
+.footer-euro-part img {
+  width: 30%;
+  max-width: 200px;
+}
+.footer-euro-part-content {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 600;
+
+  max-width: 600px;
+  color: #595959;
+}
+.footer-euro-part-content span a {
+  border-bottom: 1px solid #595959;
 }
 
 @media (min-width: 480px) {
   .footer-nav {
+    grid-auto-flow: column;
     -moz-columns: 2;
          columns: 2;
   }
@@ -4399,12 +4428,13 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .footer-nav-a {
-  color: var(--chernyy);
+  color: #404040;
 }
 
 .footer-year {
   font-size: 12px;
   text-align: center;
+  color: #404040;
 }
 
 .main-title {
