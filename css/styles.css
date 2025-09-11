@@ -3138,7 +3138,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .column-center-3 {
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px;
   padding: 0 15px 30px;
 }
 
@@ -4481,6 +4481,10 @@ input[type=number]::-webkit-inner-spin-button {
   justify-content: space-between;
   padding-top: 20px;
 }
+.main-uptitle {
+  font-size: 14px;
+  color: rgba(166, 166, 166, 1);
+}
 
 @media (min-width: 992px) {
   .main-title {
@@ -4492,11 +4496,19 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .main-title .h2{
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 700;
+  color: rgba(64, 64, 64, 1);
 }
+
 
 @media (min-width: 480px){
   .main-title .h2{
@@ -4507,7 +4519,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (min-width: 992px){
   .main-title .h2{
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: 700;
     line-height: 1.2;
   }
 }
@@ -4857,7 +4870,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .mail-list-item {
-  padding: 15px;
+  padding: 12px;
   background: var(--seryy-fon-kategorii);
   border-radius: 15px;
   display: flex;
@@ -4870,7 +4883,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (min-width: 992px) {
   .mail-list-item {
-    padding: 20px;
+    padding: 15px;
     width: calc(50% - 8px);
   }
 }
@@ -4912,7 +4925,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .mail-list-item-mail {
   color: var(--temno-olivkovyy);
-  font-size: 0.9375rem;
+  font-size: 10px;
   line-height: 1.2;
   font-weight: 600;
 }
@@ -4925,14 +4938,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (min-width: 992px){
   .mail-list-item-mail{
-    font-size: 1rem;
+    font-size: 12px;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 1280px){
   .mail-list-item-mail{
-    font-size: 1.25rem;
+    font-size: 15px;
     line-height: 1.2;
   }
 }
@@ -4942,8 +4955,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .mail-list-item-caption{
-  margin-bottom: 0.25rem;
-  font-size: 0.75rem;
+  margin-bottom: 5px;
+  font-size: 10px;
   line-height: 1.2;
   color: var(--temno-seryy);
 }
@@ -4959,7 +4972,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (min-width: 768px) {
   .btn-cancel.mail-list-item-caption {
-    font-size: 16px;
+    font-size: 12px;
     padding: 10px 15px;
   }
 }
@@ -4970,14 +4983,13 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (min-width: 768px){
   .mail-list-item-caption{
-    font-size: 0.875rem;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 1280px){
   .mail-list-item-caption{
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.2;
   }
 }
@@ -9292,7 +9304,7 @@ button.swiper-pagination-bullet {
 }
 
 .modal-content {
-  padding: 20px;
+  padding: 15px;
   background: var(--seryy-fon-kategorii);
   min-height: 100vh;
   /*.prev-btn-color2{
@@ -9309,8 +9321,6 @@ button.swiper-pagination-bullet {
 
   .modal-content-in {
     overflow: auto;
-    padding: 0 5px;
-    margin: -5px;
     -ms-overflow-style: none;
     /* Скрывает скроллбар в IE и Edge */
     scrollbar-width: none;
@@ -9867,4 +9877,41 @@ button.swiper-pagination-bullet {
 .swiperCtg {
   max-width: 100%;
   overflow: hidden;
+}
+
+
+/*----------------------------about-------------------------*/
+.about-text {
+  font-size: 14px;
+  color: #595959;
+  line-height: 1.2;
+}
+
+.top-title-header {
+  position: sticky;
+  top: 0;
+  padding-left: 15px;
+}
+
+.column-about-scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 70px);
+  margin-top: 0px;
+  scroll-behavior: smooth;
+  background: #F2F2F2;
+}
+
+.mail-list-item-col-full-button {
+  background-color: #90BD20;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 45px;
+  font-size: 16px;
+}
+.mail-list-item-col-full-content {
+  display: flex;
+  align-items: center;
+}
+.column-about-3 {
 }
