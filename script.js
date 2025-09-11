@@ -945,6 +945,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-/*==================================================scroll-adaptive================================*/
+/*==================================================seacrh-overlay================================*/
 
 
+    const searchBtn = document.getElementById('searchBtn');
+    const searchInput = document.getElementById('search');
+    const searchOverlay = document.getElementById('search-overlay');
+
+    // При клике на кнопку показываем затемнение
+    searchInput.addEventListener('click', () => {
+      searchOverlay.classList.add('active');
+      searchInput.focus(); // фокус на поле
+      console.log('++')
+    });
+
+    // При клике на оверлей убираем затемнение
+    searchOverlay.addEventListener('click', () => {
+      searchOverlay.classList.remove('active');
+    });
+
+    // Клик по инпуту не закрывает оверлей
+    searchInput.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
