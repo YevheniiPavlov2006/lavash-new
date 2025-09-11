@@ -1834,7 +1834,7 @@ input[type=number]::-webkit-inner-spin-button {
   overflow: auto;
   z-index: 1000;
   background: #FFF;
-  padding: 25px 15px;
+  padding: 20px;
   width: 100%;
   position: fixed;
   right: -100%;
@@ -2294,7 +2294,7 @@ input[type=number]::-webkit-inner-spin-button {
 
   position: relative;
   height: 190px;
-  max-width: 150px;
+  max-width: 180px;
 }
 .ctg-item-card:hover {
   box-shadow: none;
@@ -2663,9 +2663,13 @@ input[type=number]::-webkit-inner-spin-button {
 .menu-nav-ul {
   border-top: 1px solid var(--seryy-fon-kategorii);
   border-bottom: 1px solid var(--seryy-fon-kategorii);
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   overflow-y: scroll;
-  max-height: 480px;
+  max-height: 420px;
+}
+.menu-nav-ul::-webkit-scrollbar {
+  display: none;
+  width: 0;
 }
 
 .menu-nav-li, .faq-item {
@@ -2682,7 +2686,7 @@ input[type=number]::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   text-align: left;
-  font-size: 18px;
+  font-size: 14px;
   color: rgba(42, 42, 42, 1);
 }
 .header-menu-wrapper .btn {
