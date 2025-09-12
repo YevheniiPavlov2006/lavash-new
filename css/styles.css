@@ -1679,6 +1679,22 @@ input[type=number]::-webkit-inner-spin-button {
   overflow: hidden;
   flex-shrink: 0;
 }
+.btn-filter, .btn-ordered, .btn-success, .btn-obrabotka {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 15px;
+  display: inline-block;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  color: rgba(96, 202, 94, 1);
+  background-color: rgba(209, 242, 221, 1);
+}
+
 
 .btn-filter:hover, .btn-canceled:hover, .btn-success:hover, .btn-obrabotka:hover {
   background: #fdd9d5;
