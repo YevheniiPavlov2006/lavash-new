@@ -10133,3 +10133,16 @@ button.swiper-pagination-bullet {
 .cancel-screen-btn-block {
   justify-content: center;
 }
+
+/*-----------------------favorite----------------------------*/
+.favorites-items-block {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+.favorites-items-block .ctg-item {
+  height: auto !important;
+}
+.favorites-items-block .ctg-item {
+  margin: 0;
+}
