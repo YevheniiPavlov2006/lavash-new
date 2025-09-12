@@ -17,7 +17,7 @@
 
 	<body>
 		<div class="header-menu-wrapper">
-			<div class="flex justify-between mb-6 items-center">
+			<div class="flex justify-between mb-6 items-center sm:hidden">
 				<a href="#" class="mx-auto"><img src="img/logo.png" width="84" height="19"  alt=""></a>
 				<div class="menu-btn -ml-10">
 					<span></span>
@@ -25,23 +25,35 @@
 			</div>
 			<nav class="menu-nav">
 				<ul class="menu-nav-ul">
-					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a">Каталог продукции</a>
+					<li class="menu-nav-li menu-nav-li-active">
+						<a href="home.html" class="menu-nav-a">Главная</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a">Часто задаваемые вопросы</a>
+						<a href="#" class="menu-nav-a">Каталог</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a">Контакты</a>
+						<a href="about.html" class="menu-nav-a">О нас</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalCall">Перезвоните мне</a>
+						<a href="faq.html" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalCall">Часто задаваемые вопросы</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalLang">Язык</a>
+						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalLang">Контакты</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a">Отзывы</a>
+						<a href="#" class="menu-nav-a">Отмена заказа и возврат товара</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="politika.html" class="menu-nav-a">Политика конфиденциальности</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalCall">Правила пользования</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalLang">Перезвоните мне</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a">Язык</a>
 					</li>
 				</ul>
 			</nav>
@@ -52,461 +64,543 @@
 				<div class="container">
 					<div class="header-city">
 						<div class="header-in">
-							<div class="menu-btn xs:mr-5">
-								<span></span>
-							</div>
+							
 							<div class="shrink-0 xs:mr-auto">
-								<a href="#"><img src="img/logo.png" width="138" height="31"  alt=""></a>
+								<a href="#"><img src="img/logo-main-new.png"  alt=""></a>
 							</div>
-							<div class="main-search main-search-header">
+							<div class="main-search main-search-header" id="search">
 								<button class="main-search-btn"></button>
 								<input type="text" class="form-control" placeholder="Поиск"/>
 							</div>
-							<div class="flex -ml-5">
-								<div class="rounded-icos ml-5 hidden">
-									<img src="img/user.svg" width="18" height="17" alt="">
+							<div class="search-overlay" id="search-overlay"></div>
+							<div class="flex">
+								<div class="rounded-icos signUp hidden">
+									<div class="signUp-button">Войти</div>
+									<img src="img/user-icon.svg" width="20" height="20" alt="">
 								</div>
-								<div class="rounded-icos ml-5" data-bs-toggle="modal" data-bs-target="#modalCall">
-									<img src="img/phone-btn.svg" width="20" height="20" alt="">
+								<div class="rounded-icos w100" data-bs-toggle="modal" data-bs-target="#modalCall">
+									<img src="img/call-icon.svg" width="23" height="23" alt="">
 								</div>
-								<div class="rounded-icos ml-5" data-bs-toggle="modal" data-bs-target="#modalLang">
-									<img src="img/lang_ico.svg" width="24" height="25" alt="">
+								<div class="rounded-icos w100" data-bs-toggle="modal" data-bs-target="#modalLang">
+									<img src="img/language-icon.svg" width="23" height="23" alt="">
+								</div>
+								<div class="menu-btn w100">
+									<img src="img/burger-menu-svg.svg" alt="">
 								</div>
 							</div>
-
 						</div>
 						<!--<div class="header-city-in">
-				 <div>
-					<div class="h2">Ваш город Москва?</div>
-					<div class="header-city-caption">Товары и акции зависят от адреса</div>
-				 </div>
-				 <div class="flex gap-3">
-					<a href="#" class="btn headerCityYes">Да, верно</a>
-					<a href="#" class="btn btn-cancel" data-bs-toggle="modal" data-bs-target="#modalCity">Нет, другой</a>
-				 </div>
-			  </div>-->
-					</div>
+                     <div>
+                        <div class="h2">Ваш город Москва?</div>
+                        <div class="header-city-caption">Товары и акции зависят от адреса</div>
+                     </div>
+                     <div class="flex gap-3">
+                        <a href="#" class="btn headerCityYes">Да, верно</a>
+                        <a href="#" class="btn btn-cancel" data-bs-toggle="modal" data-bs-target="#modalCity">Нет, другой</a>
+                     </div>
+                  </div>-->
+								</div>
+								<div class="column-center-1 adaptive">
+									<div class="basket-top-center">
+										<div class="basket-top-center-l">
+											<div class="basket-addr" data-bs-toggle="modal" data-bs-target="#modalAddr" >
+												<div class="basket-addr-in">
+													<span class="basket-addr-span1">Никольская улица длинное, </span>
+													<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
+												</div>
+												<button class="basket-addr-btn"></button>
+											</div>
+											<div class="basket-addr-bottom">Доставка завтра</div>
+										</div>
+									</div>
+									<div class="ctg swiperCtg">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Свежий лаваш к вашему столу</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-1.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Вкус Армении: лучшие продукты с Кавказа</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-2.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Грузия на вкус: всё самое сочное и ароматное</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-3.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Лучшие мясные деликатесы</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-4.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Свежий лаваш к вашему столу</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-1.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Вкус Армении: лучшие продукты с Кавказа</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-2.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Грузия на вкус: всё самое сочное и ароматное</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-3.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Лучшие мясные деликатесы</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-4.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="swiper-button-next">
+										</div>
+										<div class="swiper-button-prev">
+										</div>
+									</div>
+								</div>
 				</div>
 			</header>
-			<div class="container flex-grow">
-				<div class="main-columns">
-					<div class="column-left  scrollbar-no">
-						<nav class="nav accordion">
-							<ul>
-								<li class="mb-3">
-									<a href="#" class="nav-a">
-										<div class="nav-icos">
-											<img src="img/nav3.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
+			<div class="main-content">
+				<div class="container flex-grow">
+					<div class="main-columns">
+						<div class="column-left scrollbar-no">
+							<nav class="nav accordion">
+								<ul>
+									<li class="mb-3 accordion-item">
+										<button class="nav-a accordion-button">
+												<div class="nav-icos nav-icos-3">
+														<img src="img/sidebar-icon-1.png" alt="" class="img-center nav-icos-img">
+														<img src="img/arrow-down.svg" alt="" class="img-center nav-icos-arrow">
+												</div>
+												<div class="nav-title">Хлеб и лаваш</div>
+										</button>
+
+										<div class="accordion-collapse">
+												<ul class="nav-sub">
+														<li class="nav-sub-li"><a href="#matnakash">Матнакаш</a></li>
+														<li class="nav-sub-li"><a href="#pita">Пита</a></li>
+														<li class="nav-sub-li"><a href="#lavash">Лаваш</a></li>
+												</ul>
 										</div>
-										<div class="nav-title">
-                                 Что нового
-                              </div>
-									</a>
-								</li>
-								<li class="mb-3">
-									<a href="#" class="nav-a">
-										<div class="nav-icos">
-											<img src="img/nav2.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-										</div>
-										<div class="nav-title">
-                                 Без дрожжевой
-                              </div>
-									</a>
-								</li>
-								<li class="mb-3 accordion-item show">
-									<button class="nav-a accordion-button">
-										<div class="nav-icos">
-											<img src="img/nav1.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-											<img src="img/arrow-down.svg" alt="" width="14" height="7" loading="lazy" decoding="async" class="img-center nav-icos-arrow">
-										</div>
-										<div class="nav-title">
-                                 Супер Батоны
-                              </div>
-									</button>
-									<div class="accordion-collapse">
-										<ul class="nav-sub">
-											<li class="nav-sub-li">
-												<a href="#" class="nav-title">Вкусные булочки</a>
-											</li>
-											<li class="nav-sub-li">
-												<a href="#" class="nav-title">Пироги</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="mb-3">
-									<a href="#" class="nav-a">
-										<div class="nav-icos">
-											<img src="img/nav3.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-										</div>
-										<div class="nav-title">
-                                 Матнакаш
-                              </div>
-									</a>
-								</li>
-								<li class="mb-3">
-									<a href="#" class="nav-a">
-										<div class="nav-icos">
-											<img src="img/nav2.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-										</div>
-										<div class="nav-title">
-                                 Лаваши 
-                              </div>
-									</a>
-								</li>
-								<li class="mb-3">
-									<a href="#" class="nav-a">
-										<div class="nav-icos">
-											<img src="img/nav3.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-										</div>
-										<div class="nav-title">
-                                 Что нового
-                              </div>
-									</a>
-								</li>
-								<li class="mb-3">
-									<a href="#" class="nav-a">
-										<div class="nav-icos">
-											<img src="img/nav2.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-										</div>
-										<div class="nav-title">
-                                 Без дрожжевой
-                              </div>
-									</a>
-								</li>
-								<li class="mb-3 accordion-item">
-									<button class="nav-a accordion-button">
-										<div class="nav-icos">
-											<img src="img/nav1.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-											<img src="img/arrow-down.svg" alt="" width="14" height="7" loading="lazy" decoding="async" class="img-center nav-icos-arrow">
-										</div>
-										<div class="nav-title">
-                                 Супер Батоны Текст в 2 строчки
-                              </div>
-									</button>
-									<div class="accordion-collapse">
-										<ul class="nav-sub">
-											<li class="nav-sub-li">
-												<a href="#" class="nav-title">Вкусные булочки</a>
-											</li>
-											<li class="nav-sub-li">
-												<a href="#" class="nav-title">Пироги</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="mb-3">
-									<a href="#" class="nav-a">
-										<div class="nav-icos">
-											<img src="img/nav3.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-										</div>
-										<div class="nav-title">
-                                 Матнакаш
-                              </div>
-									</a>
-								</li>
-								<li class="mb-3">
-									<a href="#" class="nav-a">
-										<div class="nav-icos">
-											<img src="img/nav2.png" alt="" width="50" height="50" loading="lazy" decoding="async" class="img-center nav-icos-img">
-										</div>
-										<div class="nav-title">
-                                 Лаваши 
-                              </div>
-									</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<!--end column-left-->
-					<div class="column-center">
-						<div class="column-center-3">
-							<div class="main-title">
-								<a href="#" class="prev-btn mb-5"></a>
-								<h1 class="mb-5">Способ доставки</h1>
-								<a href="#" class="next-btn mb-5"></a>
-							</div>
-							<ul class="step-list">
-								<li class="step-list-li step-list-li-active"></li>
-								<li class="step-list-li step-list-li-active"></li>
-								<li class="step-list-li step-list-li-active"></li>
-								<li class="step-list-li step-list-li-active"></li>
-								<li class="step-list-li"></li>
-							</ul>
-							<label class="radio-item">
-								<input type="radio" name="dostavka1" class="radio-item-input">
-								<div class="radio-item-bg"></div>
-								<div class="radio-item-ico">
-									<img src="img/dostavka-ico1.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
-								</div>
-								<span>Курьером по Риге и Юрмале</span>
-							</label>
-							<label class="radio-item">
-								<input type="radio" name="dostavka1" class="radio-item-input">
-								<div class="radio-item-bg"></div>
-								<div class="radio-item-ico">
-									<img src="img/dostavka-omnia.png" alt="" width="20" height="20" loading="lazy" decoding="async">
-								</div>
-								<span>Пакомат Omniva</span>
-							</label>
-							<label class="radio-item">
-								<input type="radio" name="dostavka1" class="radio-item-input">
-								<div class="radio-item-bg"></div>
-								<div class="radio-item-ico">
-									<img src="img/dostavka-venipak.png" alt="" width="20" height="20" loading="lazy" decoding="async">
-								</div>
-								<span>Пакомат Venipak</span>
-							</label>
-							<label class="radio-item">
-								<input type="radio" name="dostavka1" class="radio-item-input">
-								<div class="radio-item-bg"></div>
-								<div class="radio-item-ico">
-									<img src="img/dostavka-venipak.png" alt="" width="20" height="20" loading="lazy" decoding="async">
-								</div>
-								<span>Курьерская служба Venipak</span>
-							</label>
-							<label class="radio-item">
-								<input type="radio" name="dostavka1" class="radio-item-input">
-								<div class="radio-item-bg"></div>
-								<div class="radio-item-ico">
-									<img src="img/dostavka-dpd.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
-								</div>
-								<span>Курьерская служба DPD</span>
-							</label>
-							<label class="radio-item">
-								<input type="radio" name="dostavka1" class="radio-item-input">
-								<div class="radio-item-bg"></div>
-								<div class="radio-item-ico">
-									<img src="img/dostavka-samo.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
-								</div>
-								<span>Самовывоз из магазина</span>
-							</label>
-							<div class="sm:flex justify-end mt-2">
-								<a href="#" class="btn sm:w-auto sm:px-10">Далее</a>
-							</div>
-							<div class="flex justify-center mt-12">
-								<span class="flex items-center texty-sm" data-bs-toggle="modal" data-bs-target="#modalUsloviyaDostavki">
-									<div class="flex-shrink-0 mr-1">
-										<img src="img/info-ico.svg" alt="" width="17" height="17" loading="lazy" decoding="async">
-									</div>
-									<span>Условия доставки</span>
-								</span>
-							</div>
-						</div>
-						<!--end column-center-3-->
-						<footer class="footer">
-							<div class="flex items-center justify-between">
-								<a href="#" class="flex-shrink-0 mr-2"><img src="img/logo.png" width="96" height="21" loading="lazy" decoding="async" alt="" class="mb-5"></a>
-								<ul class="social mb-5">
-									<li>
-										<a href="#"><img src="img/social_insta.svg" alt="" width="16" height="16" loading="lazy" decoding="async" class="img-center"></a>
 									</li>
-									<li>
-										<a href="#"><img src="img/social_tube.svg" alt="" width="18" height="14" loading="lazy" decoding="async" class="img-center"></a>
+
+									<li class="mb-3 accordion-item">
+										<button class="nav-a accordion-button">
+												<div class="nav-icos nav-icos-3">
+														<img src="img/sidebar-icon-2.png" alt="" class="img-center nav-icos-img">
+														<img src="img/arrow-down.svg" alt="" class="img-center nav-icos-arrow">
+												</div>
+												<div class="nav-title">Вода и напитки</div>
+										</button>
+
+										<div class="accordion-collapse">
+												<ul class="nav-sub">
+														<li class="nav-sub-li"><a href="#water">Вода</a></li>
+														<li class="nav-sub-li"><a href="#juice">Соки, компоты</a></li>
+														<li class="nav-sub-li"><a href="#limonade">Лимонады</a></li>
+												</ul>
+										</div>
 									</li>
-									<li>
-										<a href="#"><img src="img/social_fb.svg" alt="" width="18" height="18" loading="lazy" decoding="async" class="img-center"></a>
+
+									<li class="mb-3 accordion-item">
+										<button class="nav-a accordion-button">
+												<div class="nav-icos nav-icos-3">
+														<img src="img/sidebar-icon-3.png" alt="" class="img-center nav-icos-img">
+														<img src="img/arrow-down.svg" alt="" class="img-center nav-icos-arrow">
+												</div>
+												<div class="nav-title">Бакалея</div>
+										</button>
+
+										<div class="accordion-collapse">
+												<ul class="nav-sub">
+														<li class="nav-sub-li"><a href="#marinad">Маринады</a></li>
+														<li class="nav-sub-li"><a href="#vagetables">Овощные консервы</a></li>
+												</ul>
+										</div>
 									</li>
+
+									<li class="mb-3 accordion-item">
+										<button class="nav-a accordion-button">
+												<div class="nav-icos nav-icos-3">
+														<img src="img/sidebar-icon-4.png" alt="" class="img-center nav-icos-img">
+														<img src="img/arrow-down.svg" alt="" class="img-center nav-icos-arrow">
+												</div>
+												<div class="nav-title">Мясные продукты</div>
+										</button>
+
+										<div class="accordion-collapse">
+												<ul class="nav-sub">
+														<li class="nav-sub-li"><a href="#basturma">Бастурма</a></li>
+														<li class="nav-sub-li"><a href="#sudjuk">Суджук</a></li>
+												</ul>
+										</div>
+									</li>
+
+									<li class="mb-3 accordion-item">
+										<button class="nav-a accordion-button">
+												<div class="nav-icos nav-icos-3">
+														<img src="img/sidebar-icon-5.png" alt="" class="img-center nav-icos-img">
+														<img src="img/arrow-down.svg" alt="" class="img-center nav-icos-arrow">
+												</div>
+												<div class="nav-title">Сладкое</div>
+										</button>
+
+										<div class="accordion-collapse">
+												<ul class="nav-sub">
+														<li class="nav-sub-li"><a href="#jam">Варенья</a></li>
+														<li class="nav-sub-li"><a href="#jams">Джемы</a></li>
+														<li class="nav-sub-li"><a href="#sweets">Кондитерские изделия</a></li>
+												</ul>
+										</div>
+									</li>
+									
 								</ul>
+							</nav>
+						</div>
+						<!--end column-left-->
+						<div class="column-center">
+							<div class="main-title main-title-payment">
+								<a href="#" class="prev-btn mb-5"></a>
+								<h1 class="">Способ доставки</h1>
+								<button class="round-search-btn mb-5"></button>
+							</div>										
+							<div class="column-about-scrollable">
+								<div class="column-center-3 column-center-3-middle">
+									<ul class="step-list">
+										<li class="step-list-li step-list-li-active"></li>
+										<li class="step-list-li step-list-li-active"></li>
+										<li class="step-list-li step-list-li-active"></li>
+										<li class="step-list-li step-list-li-active"></li>
+										<li class="step-list-li"></li>
+									</ul>
+									<label class="radio-item">
+										<input type="radio" name="dostavka1" class="radio-item-input">
+										<div class="radio-item-bg"></div>
+										<div class="radio-item-ico">
+											<img src="img/dostavka-ico1.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+										</div>
+										<span>Курьером по Риге и Юрмале</span>
+									</label>
+									<label class="radio-item">
+										<input type="radio" name="dostavka1" class="radio-item-input">
+										<div class="radio-item-bg"></div>
+										<div class="radio-item-ico">
+											<img src="img/dostavka-omnia.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+										</div>
+										<span>Пакомат Omniva</span>
+									</label>
+									<label class="radio-item">
+										<input type="radio" name="dostavka1" class="radio-item-input">
+										<div class="radio-item-bg"></div>
+										<div class="radio-item-ico">
+											<img src="img/dostavka-venipak.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+										</div>
+										<span>Пакомат Venipak</span>
+									</label>
+									<label class="radio-item">
+										<input type="radio" name="dostavka1" class="radio-item-input">
+										<div class="radio-item-bg"></div>
+										<div class="radio-item-ico">
+											<img src="img/dostavka-venipak.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+										</div>
+										<span>Курьерская служба Venipak</span>
+									</label>
+									<label class="radio-item">
+										<input type="radio" name="dostavka1" class="radio-item-input">
+										<div class="radio-item-bg"></div>
+										<div class="radio-item-ico">
+											<img src="img/dostavka-dpd.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+										</div>
+										<span>Курьерская служба DPD</span>
+									</label>
+									<label class="radio-item">
+										<input type="radio" name="dostavka1" class="radio-item-input">
+										<div class="radio-item-bg"></div>
+										<div class="radio-item-ico">
+											<img src="img/dostavka-samo.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+										</div>
+										<span>Самовывоз из магазина</span>
+									</label>
+									<div class="sm:flex justify-end mt-2">
+										<a href="#" class="btn sm:w-auto sm:px-10">Далее</a>
+									</div>
+									<div class="flex justify-center mt-12">
+										<span class="flex items-center texty-sm" data-bs-toggle="modal" data-bs-target="#modalUsloviyaDostavki">
+											<div class="flex-shrink-0 mr-1">
+												<img src="img/info-ico.svg" alt="" width="17" height="17" loading="lazy" decoding="async">
+											</div>
+											<span>Условия доставки</span>
+										</span>
+									</div>
+								</div>
+								<!--end column-center-3-->
+								<footer class="footer">
+									<div class="flex items-center justify-between">
+										<a href="#" class="flex-shrink-0 mr-2"><img src="img/logo.png" width="96" height="21" loading="lazy" decoding="async" alt="" class="mb-5"></a>
+										<ul class="social mb-5">
+											<li>
+												<a href="#"><img src="img/social_insta.svg" alt="" width="16" height="16" loading="lazy" decoding="async" class="img-center"></a>
+											</li>
+											<li>
+												<a href="#"><img src="img/social_fb.svg" alt="" width="18" height="18" loading="lazy" decoding="async" class="img-center"></a>
+											</li>
+										</ul>
+									</div>
+									<ul class="footer-nav">
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Главная</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="about.html" class="footer-nav-a">О нас</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Каталог</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Контакты</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Отзывы</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Отмена заказа и возврат товара</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Политика конфиденциальности</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="faq.html" class="footer-nav-a">Часто задаваемые вопросы</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Правила пользования</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Поставщикам</a>
+										</li>
+									</ul>
+									<div class="footer-euro-part">
+										<img src="img/euro-mark.png" alt="">
+										<div class="footer-euro-part-content">SIA LAVASH 2024.gada 27.maijā noslēdza līgumu 
+											Nr.17.2-5-L-2024/274 ar Latvijas Investīciju un attīstības aģentūru par atbalsta 
+											saņemšanu uzņēmuma digitalizācijas programmā “Latvijas Atveseļošanas un noturības 
+											mehānisma plāna 2. komponentes “Digitālā transformācija” 2.2. reformu un investīciju 
+											virziena “Uzņēmumu digitālā transformācija un inovācijas” 2.2.1.r. 
+											“Uzņēmējdarbības digitālās transformācijas pilna cikla atbalsta izveide ar 
+											reģionālo tvērumu” 2.2.1.2.i. investīcijas “Atbalsts procesu digitalizācijai komercdarbībā”.
+											<br/>Ar šo informējam arī citus uzņēmumus par iespēju pievienoties <span><a href="https://www.liaa.gov.lv/lv/programmas/atbalsts-procesu-digitalizacijai">programmai.</a></span></div>
+									</div>
+									<div class="footer-year">Все права защищены ©2024</div>
+								</footer>
 							</div>
-							<ul class="footer-nav">
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">О нас</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Правила покупки</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Условия возврата</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Часто задаваемые вопросы</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Вопрос-ответ</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Контакты</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Информация об авторских правах</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Стать курьером</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Поставщикам</a>
-								</li>
-							</ul>
-							<div class="footer-year">2024</div>
-						</footer>
+						</div>
+						<!--end column-center-->
+						<div class="column-right basket-wrapper scrollbar-no">
+							<div class="basket-top">
+								<div class="basket-addr" data-bs-toggle="modal" data-bs-target="#modalAddr">
+									<div class="basket-addr-in">
+										<span class="basket-addr-span1">Никольская улица длинное, </span>
+										<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
+									</div>
+									<button class="basket-addr-btn"></button>
+								</div>
+								<div class="basket-addr-bottom mb-4">Доставка завтра</div>
+								<button class="basket-close"></button>
+							</div>
+							<div class="basket-items scrollbar-no">
+								<div class="message-box">
+													Некоторые товары раскупили - мы убрали их из вашей корзины
+													<button class="message-box-close"></button>
+								</div>
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+	
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+	
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+	
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+	
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="flex justify-between items-center mt-2.5">
+									<span class="basket-delivery-title">Доставка</span>
+									<div class="basket-delivery-price">
+										<span class="basketDelivery">3000</span> ₽</div>
+								</div>
+							</div>
+							<div class="basket-total basket-items-after">
+								<div class="basket-total-span">Итого</div>
+								<span class="basketTotal">2 458</span> ₽
+											 <button class="btn">Купить</button>
+							</div>
+							<div class="basket-empty">
+								<img src="img/basket-empty.svg" alt="" width="100" height="100" loading="lazy" decoding="async" class="basket-empty-img">
+											 Ваша корзина пока пуста
+										</div>
+						</div>
+						<!--end column-right-->
 					</div>
-					<!--end column-center-->
-					<div class="column-right basket-wrapper scrollbar-no">
-						<div class="basket-top">
-							<div class="basket-addr" data-bs-toggle="modal" data-bs-target="#modalCity">
-								<div class="basket-addr-in">
-									<span class="basket-addr-span1">Никольская улица длинное, </span>
-									<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
-								</div>
-								<button class="basket-addr-btn"></button>
-							</div>
-							<div class="basket-addr-bottom mb-4">Доставка в течении дня</div>
-							<button class="basket-close"></button>
-						</div>
-						<div class="basket-items  scrollbar-no">
-							<div class="message-box">
-                        Некоторые товары раскупили - мы убрали их из вашей корзины
-                        <button class="message-box-close"></button>
-							</div>
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="flex justify-between items-center mt-2.5">
-								<span class="basket-delivery-title">Доставка</span>
-								<div class="basket-delivery-price">
-									<span class="basketDelivery">3000</span> ₽</div>
-							</div>
-						</div>
-						<div class="basket-total basket-items-after">
-							<div class="basket-total-span">Итого</div>
-							<span class="basketTotal">2 458</span> ₽
-                     <button class="btn mt-4 font-normal">Продолжить</button>
-						</div>
-
-						<div class="basket-empty">
-							<img src="img/basket-empty.svg" alt="" width="100" height="100" loading="lazy" decoding="async" class="basket-empty-img">
-                     Ваша корзина пока пуста
-                  </div>
-					</div>
-					<!--end column-right-->
 				</div>
 			</div>
 			<!--end container-->

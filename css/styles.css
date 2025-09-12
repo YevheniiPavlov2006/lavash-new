@@ -1642,11 +1642,12 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .btn.text-sm {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .btn-cancel {
   background-color: var(--standartnyy-seryy);
+  color: rgba(89, 89, 89, 1);
 }
 
 .btn-cancel:hover {
@@ -2681,9 +2682,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .menu-nav-a, .faq-button {
-  padding: 15px 5px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   text-align: left;
   font-size: 14px;
@@ -2739,6 +2739,15 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   font-size: 13px;
   font-weight: 600;
+}
+.accordion .faq-button {
+  width: 30px;
+}
+.accordion-item .faq-button img {
+  transition: 0.2s;
+}
+.accordion-item.show .faq-button img {
+  transform: rotate(-180deg);
 }
 
 @media (min-width: 992px) {
@@ -3167,6 +3176,26 @@ input[type=number]::-webkit-inner-spin-button {
   position: relative;
   z-index: 30;
 }
+.accordion-item .table-succes-order {
+  display: none;
+}
+.accordion-item.show .table-succes-order {
+  display: block;
+  min-width: 100%;
+}
+.accordion-item.show .table-succes-order tbody {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 100%;
+}
+.accordion-item.show .table-succes-order tbody tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+}
+
 
 .nav-a {
   display: flex;
@@ -10003,5 +10032,53 @@ button.swiper-pagination-bullet {
   padding-bottom: 10px;
 }
 .payment-text {
+  color: rgba(89, 89, 89, 1);
+}
+.main-title-payment h1 {
+  color: rgba(64, 64, 64, 1);
+}
+
+/*-----------------------------------------thanks--------------------------------------*/
+
+.thanks-block-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 15px;
+}
+.thanks-block-main div {
+  font-size: 16px;
+  color: rgba(89, 89, 89, 1);
+}
+.thanks-price {
+  color: rgba(89, 89, 89, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding-top: 40px;
+}
+
+.td-date {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.td-date .color-grey {
+  color: rgba(158, 158, 158, 1);
+}
+.td-date .color-black {
+  color: rgba(42, 42, 42, 1);
+}
+.thanks-td-price {
+  font-weight: 700;
+  color: rgba(89, 89, 89, 1);
+  font-size: 20px;
+}
+.td-box-value {
   color: rgba(89, 89, 89, 1);
 }
