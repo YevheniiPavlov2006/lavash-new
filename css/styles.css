@@ -2699,10 +2699,11 @@ input[type=number]::-webkit-inner-spin-button {
 
 .menu-nav-a, .faq-button {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  padding: 15px 0;
   align-items: center;
   text-align: left;
-  font-size: 14px;
+  font-size: 15px;
   color: rgba(42, 42, 42, 1);
 }
 .header-menu-wrapper .btn {
@@ -10076,6 +10077,10 @@ button.swiper-pagination-bullet {
   justify-content: center;
   gap: 2px;
   padding-top: 40px;
+}
+
+.accordion .faq-button {
+  padding: 0;
 }
 
 .td-date {
