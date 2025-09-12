@@ -5209,9 +5209,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .canceled-item-col-2 .canceled-grey {
   color: rgba(166, 166, 166, 1);
-
 }
-
+.canceled-item-col-2 .cancel-black {
+  color: rgba(64, 64, 64, 1);
+}
+.cancel-black-800 {
+  color: rgba(89, 89, 89, 1);
+  font-size: 14px;
+}
 
 @media (min-width: 768px) {
   .canceled-item-col2 {
@@ -10120,4 +10125,11 @@ button.swiper-pagination-bullet {
   color: rgba(89, 89, 89, 1);
   max-width: 600px;
   margin: 0 auto;
+}
+.cancel-screen-btn {
+  max-width: 185px;
+  font-size: 16px;
+}
+.cancel-screen-btn-block {
+  justify-content: center;
 }
