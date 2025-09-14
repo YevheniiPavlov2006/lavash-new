@@ -17,7 +17,7 @@
 
 	<body>
 		<div class="header-menu-wrapper">
-			<div class="flex justify-between mb-6 items-center">
+			<div class="flex justify-between mb-6 items-center sm:hidden">
 				<a href="#" class="mx-auto"><img src="img/logo.png" width="84" height="19"  alt=""></a>
 				<div class="menu-btn -ml-10">
 					<span></span>
@@ -25,23 +25,35 @@
 			</div>
 			<nav class="menu-nav">
 				<ul class="menu-nav-ul">
-					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a">Каталог продукции</a>
+					<li class="menu-nav-li menu-nav-li-active">
+						<a href="home.html" class="menu-nav-a">Главная</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a">Часто задаваемые вопросы</a>
+						<a href="#" class="menu-nav-a">Каталог</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a">Контакты</a>
+						<a href="about.html" class="menu-nav-a">О нас</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalCall">Перезвоните мне</a>
+						<a href="faq.html" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalCall">Часто задаваемые вопросы</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalLang">Язык</a>
+						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalLang">Контакты</a>
 					</li>
 					<li class="menu-nav-li">
-						<a href="#" class="menu-nav-a">Отзывы</a>
+						<a href="#" class="menu-nav-a">Отмена заказа и возврат товара</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="politika.html" class="menu-nav-a">Политика конфиденциальности</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalCall">Правила пользования</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a" data-bs-toggle="modal" data-bs-target="#modalLang">Перезвоните мне</a>
+					</li>
+					<li class="menu-nav-li">
+						<a href="#" class="menu-nav-a">Язык</a>
 					</li>
 				</ul>
 			</nav>
@@ -52,87 +64,212 @@
 				<div class="container">
 					<div class="header-city">
 						<div class="header-in">
-							<div class="menu-btn xs:mr-5">
-								<span></span>
-							</div>
+							
 							<div class="shrink-0 xs:mr-auto">
-								<a href="#"><img src="img/logo.png" width="138" height="31"  alt=""></a>
+								<a href="#"><img src="img/logo-main-new.png"  alt=""></a>
 							</div>
-							<div class="main-search main-search-header">
+							<div class="main-search main-search-header" id="search">
 								<button class="main-search-btn"></button>
 								<input type="text" class="form-control" placeholder="Поиск"/>
 							</div>
-							<div class="flex -ml-5">
-								<div class="rounded-icos ml-5 hidden">
-									<img src="img/profile-ico1.svg" width="40" height="40" alt="" class="img-fit">
+							<div class="search-overlay" id="search-overlay"></div>
+							<div class="flex">
+								<div class="rounded-icos signUp hidden">
+									<div class="signUp-button">Войти</div>
+									<img src="img/user-icon.svg" width="20" height="20" alt="">
 								</div>
-								<div class="rounded-icos ml-5" data-bs-toggle="modal" data-bs-target="#modalCall">
-									<img src="img/phone-btn.svg" width="20" height="20" alt="">
+								<div class="rounded-icos w100" data-bs-toggle="modal" data-bs-target="#modalCall">
+									<img src="img/call-icon.svg" width="23" height="23" alt="">
 								</div>
-								<div class="rounded-icos ml-5" data-bs-toggle="modal" data-bs-target="#modalLang">
-									<img src="img/lang_ico.svg" width="24" height="25" alt="">
+								<div class="rounded-icos w100" data-bs-toggle="modal" data-bs-target="#modalLang">
+									<img src="img/language-icon.svg" width="23" height="23" alt="">
+								</div>
+								<div class="menu-btn w100">
+									<img src="img/burger-menu-svg.svg" alt="">
 								</div>
 							</div>
-
 						</div>
 						<!--<div class="header-city-in">
-				 <div>
-					<div class="h2">Ваш город Москва?</div>
-					<div class="header-city-caption">Товары и акции зависят от адреса</div>
-				 </div>
-				 <div class="flex gap-3">
-					<a href="#" class="btn headerCityYes">Да, верно</a>
-					<a href="#" class="btn btn-cancel" data-bs-toggle="modal" data-bs-target="#modalCity">Нет, другой</a>
-				 </div>
-			  </div>-->
-					</div>
+                     <div>
+                        <div class="h2">Ваш город Москва?</div>
+                        <div class="header-city-caption">Товары и акции зависят от адреса</div>
+                     </div>
+                     <div class="flex gap-3">
+                        <a href="#" class="btn headerCityYes">Да, верно</a>
+                        <a href="#" class="btn btn-cancel" data-bs-toggle="modal" data-bs-target="#modalCity">Нет, другой</a>
+                     </div>
+                  </div>-->
+								</div>
+								<div class="column-center-1 adaptive">
+									<div class="basket-top-center">
+										<div class="basket-top-center-l">
+											<div class="basket-addr" data-bs-toggle="modal" data-bs-target="#modalAddr" >
+												<div class="basket-addr-in">
+													<span class="basket-addr-span1">Никольская улица длинное, </span>
+													<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
+												</div>
+												<button class="basket-addr-btn"></button>
+											</div>
+											<div class="basket-addr-bottom">Доставка завтра</div>
+										</div>
+									</div>
+									<div class="ctg swiperCtg">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Свежий лаваш к вашему столу</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-1.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Вкус Армении: лучшие продукты с Кавказа</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-2.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Грузия на вкус: всё самое сочное и ароматное</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-3.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Лучшие мясные деликатесы</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-4.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Свежий лаваш к вашему столу</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-1.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Вкус Армении: лучшие продукты с Кавказа</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-2.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Грузия на вкус: всё самое сочное и ароматное</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-3.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide ctg-item">
+												<div class="ctg-item-in">
+													<div class="ctg-item-in-in">
+														<div class="main-banner-shadow"></div>
+														<div class="ctg-item-title">Лучшие мясные деликатесы</div>
+														<div class="ctg-item-img">
+															<img src="img/banner-img-4.png" width="220" height="290" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="swiper-button-next">
+										</div>
+										<div class="swiper-button-prev">
+										</div>
+									</div>
+								</div>
 				</div>
 			</header>
-			<div class="container flex-grow">
-				<div class="main-columns">
-					<div class="column-left column-left-cabinet scrollbar-no">
-						<div class="flex-grow">
-							<div class="cabinet-title">Личный кабинет</div>
 
-							<div class="cabinet-top mb-3">
-								<div class="cabinet-ico">
-									<img src="img/profile-ico1.svg" width="44" height="44" alt="">
+			<div class="main-content">
+				<div class="container flex-grow">
+					<div class="main-columns">
+						<div class="column-left column-left-cabinet scrollbar-no cabinet">
+							<div class="flex-grow">
+								<div class="cabinet-title cabinet-title-new">Личный кабинет</div>
+
+								<div class="cabinet-top mb-3">
+									<div class="cabinet-ico">
+										<img src="img/profile-ico1.svg" width="44" height="44" alt="">
+									</div>
+									<div class="text-base flex-grow">
+										<div class="mb-0.5 user-name">Анастасия</div>
+										<div class="color-grey user-phone">+7 919 258 5555</div>
+									</div>
+									<a href="#" class="next-btn cabinetBtn sm:hidden"></a>
 								</div>
-								<div class="text-base flex-grow">
-									<div class="mb-0.5">Анастасия</div>
-									<div class="color-grey">+7 919 258 5555</div>
-								</div>
-								<a href="#" class="next-btn cabinetBtn sm:hidden"></a>
+
+								<ul class="">
+									<li class="menu-nav-li">
+										<a href="#">
+											<div class="menu-nav-a">Текущий заказ</div>
+											<img class="cabinet-list-arrow" src="img/cabinet-arrow.svg" alt="">
+										</a>
+									</li>
+									<li class="menu-nav-li">
+										<a href="#">
+											<div class="menu-nav-a">История покупок</div>
+											<img class="cabinet-list-arrow" src="img/cabinet-arrow.svg" alt="">
+										</a>
+									</li>
+									<li class="menu-nav-li">
+										<a href="#">
+											<div class="menu-nav-a">Избранные товары</div>
+											<img class="cabinet-list-arrow" src="img/cabinet-arrow.svg" alt="">
+										</a>
+									</li>
+									<li class="menu-nav-li">
+										<a href="#">
+											<div class="menu-nav-a">Профиль пользователя</div>
+											<img class="cabinet-list-arrow" src="img/cabinet-arrow.svg" alt="">
+										</a>
+									</li>
+								</ul>
+								<a href="#" class="exit-btn">Выйти</a>
 							</div>
-
-							<ul class="mb-4">
-								<li class="menu-nav-li">
-									<a href="#" class="menu-nav-a">Текущий заказ</a>
-								</li>
-								<li class="menu-nav-li">
-									<a href="#" class="menu-nav-a">История покупок</a>
-								</li>
-								<li class="menu-nav-li">
-									<a href="#" class="menu-nav-a">Избранные товары</a>
-								</li>
-								<li class="menu-nav-li">
-									<a href="#" class="menu-nav-a">Профиль пользователя</a>
-								</li>
-							</ul>
-							<a href="#" class="exit-btn mt-4">Выйти</a>
+							<a href="#" class="goto-home">На главную</a>
 						</div>
-						<a href="#" class="goto-home mt-5">На главную</a>
-					</div>
-					<!--end column-left-->
-					<div class="column-center column-center-cabinet">
-						<div class="column-center-3 accordion">
-							<div class="main-title mb-4 md:mb-6">
-								<a href="#" class="prev-btn cabinetBtn sm:hidden"></a>
-								<div class="h2">История покупок</div>
-								<div class="h2 h2-cabinet">Личный кабинет</div>
-								<a href="#" class="next-btn notvisible"></a>
+						<!--end column-left-->
+						<div class="column-center">
+							<div class="main-title top-title-header">
+								<h1 class="mb-3 mt-1">История покупок</h1>
 							</div>
-							<div class="flex gap-2 items-center w-full scrollbar-no h-8 xs:h-auto xs:flex-wrap mb-3 sm:mb-5 md:mb-6">
+							<div class="column-about-scrollable">
+								<div class="column-center-3 column-center-3-middle">
+									<div class="flex gap-2 items-center w-full scrollbar-no h-8 xs:h-auto xs:flex-wrap mb-3 sm:mb-5 md:mb-6">
 								<div class="btn btn-filter">Последние</div>
 								<div class="btn btn-filter btn-filter-icos"  data-bs-toggle="modal" data-bs-target="#modalDateFilter">
 									<span>Фильтр по дате</span>
@@ -142,479 +279,480 @@
 								</div>
 								<div class="btn btn-success btn-filter">Заказ принят</div>
 								<div class="btn btn-obrabotka btn-filter">В обработке</div>
-							</div>
+								</div>
 
-							<div class="basket-items-canceled mb-5">
-								<div class="accordion-item show">
-									<div class="flex items-center w-full justify-between mb-4">
-										<div class="btn btn-success">Заказ принят</div>
-										<button class="faq-button p-0 w-24 accordion-button flex-grow"></button>
-									</div>
-									<div class="mb-2.5 xs:flex">
-										<div class="xs:mr-5">Заказ № 3568846</div>
-										<div class="color-grey">02.05.24</div>
-									</div>
-									<div class="accordion-collapse text-xs sm:text-sm mb-2.5 xs:mb-4">
-										<div class="canceled-item">
-											<div class="canceled-item-img">
-												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
-											</div>
-
-											<div class="canceled-item-descript">
-												<div class="flex justify-between items-center">
-													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
-													<div class="addto-favorite"></div>
+								<div class="basket-items-canceled mb-5">
+									<div class="accordion-item show">
+										<div class="flex items-center w-full justify-between mb-4">
+											<div class="btn btn-success">Заказ принят</div>
+											<button class="faq-button p-0 w-24 accordion-button flex-grow"></button>
+										</div>
+										<div class="mb-2.5 xs:flex">
+											<div class="xs:mr-5">Заказ № 3568846</div>
+											<div class="color-grey">02.05.24</div>
+										</div>
+										<div class="accordion-collapse text-xs sm:text-sm mb-2.5 xs:mb-4">
+											<div class="canceled-item">
+												<div class="canceled-item-img">
+													<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
 												</div>
-												<div class="flex items-center justify-between">
-													<div>
-														<span class="mr-2.5">№ 58864</span>
-														<span class="color-grey">8 шт</span>
+
+												<div class="canceled-item-descript">
+													<div class="flex justify-between items-center">
+														<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+														<div class="addto-favorite"></div>
 													</div>
-													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
-												</div>
-											</div>
-										</div>
-										<div class="canceled-item">
-											<div class="canceled-item-img">
-												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
-											</div>
-
-											<div class="canceled-item-descript">
-												<div class="flex justify-between items-center">
-													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
-													<div class="addto-favorite"></div>
-												</div>
-												<div class="flex items-center justify-between">
-													<div>
-														<span class="mr-2.5">№ 58864</span>
-														<span class="color-grey">8 шт</span>
+													<div class="flex items-center justify-between">
+														<div>
+															<span class="mr-2.5">№ 58864</span>
+															<span class="color-grey">8 шт</span>
+														</div>
+														<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
 													</div>
-													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
 												</div>
 											</div>
-										</div>
-										<div class="canceled-item">
-											<div class="canceled-item-img">
-												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
-											</div>
+											<div class="canceled-item">
+												<div class="canceled-item-img">
+													<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+												</div>
 
-											<div class="canceled-item-descript">
-												<div class="flex justify-between items-center">
-													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
-													<div class="addto-favorite"></div>
-												</div>
-												<div class="flex items-center justify-between">
-													<div>
-														<span class="mr-2.5">№ 58864</span>
-														<span class="color-grey">8 шт</span>
+												<div class="canceled-item-descript">
+													<div class="flex justify-between items-center">
+														<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+														<div class="addto-favorite"></div>
 													</div>
-													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													<div class="flex items-center justify-between">
+														<div>
+															<span class="mr-2.5">№ 58864</span>
+															<span class="color-grey">8 шт</span>
+														</div>
+														<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="canceled-item">
-											<div class="canceled-item-img">
-												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
-											</div>
+											<div class="canceled-item">
+												<div class="canceled-item-img">
+													<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+												</div>
 
-											<div class="canceled-item-descript">
-												<div class="flex justify-between items-center">
-													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
-													<div class="addto-favorite"></div>
-												</div>
-												<div class="flex items-center justify-between">
-													<div>
-														<span class="mr-2.5">№ 58864</span>
-														<span class="color-grey">8 шт</span>
+												<div class="canceled-item-descript">
+													<div class="flex justify-between items-center">
+														<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+														<div class="addto-favorite"></div>
 													</div>
-													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													<div class="flex items-center justify-between">
+														<div>
+															<span class="mr-2.5">№ 58864</span>
+															<span class="color-grey">8 шт</span>
+														</div>
+														<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													</div>
+												</div>
+											</div>
+											<div class="canceled-item">
+												<div class="canceled-item-img">
+													<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+												</div>
+
+												<div class="canceled-item-descript">
+													<div class="flex justify-between items-center">
+														<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+														<div class="addto-favorite"></div>
+													</div>
+													<div class="flex items-center justify-between">
+														<div>
+															<span class="mr-2.5">№ 58864</span>
+															<span class="color-grey">8 шт</span>
+														</div>
+														<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="canceled-item-row">
-										<div class="canceled-item-col canceled-item-col-1 mb-7 xs:mb-0">
-											<a href="#" class="btn btn-cancel w-auto xs:w-full">Показать все товары заказа</a>
-										</div>
-										<div class="canceled-item-col canceled-item-col-2">
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Адрес доставки</div>
-												<div class="canceled-item-col2">г. Москва, Причальный пр-д, 3 корпус 3, кв. 59</div>
+										<div class="canceled-item-row">
+											<div class="canceled-item-col canceled-item-col-1 mb-7 xs:mb-0">
+												<a href="#" class="btn btn-cancel w-auto xs:w-full">Показать все товары заказа</a>
 											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Кол-во товаров</div>
-												<div class="canceled-item-col2">58 986 шт</div>
+											<div class="canceled-item-col canceled-item-col-2">
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Адрес доставки</div>
+													<div class="canceled-item-col2">г. Москва, Причальный пр-д, 3 корпус 3, кв. 59</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Кол-во товаров</div>
+													<div class="canceled-item-col2">58 986 шт</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Общая сумма заказа</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">2 658 ₽</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Экономия</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg color-green">6 258 ₽</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Сумма заказа с НДС</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">289 658 ₽</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">НДС (%)</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">20% - 258 ₽</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Сумма заказа без НДС</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">8 ₽</div>
+												</div>
 											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Общая сумма заказа</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">2 658 ₽</div>
+											<div class="canceled-item-col canceled-item-col-3">
+												<a href="#" class="btn xs:w-auto">Повторить заказ</a>
 											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Экономия</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg color-green">6 258 ₽</div>
-											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Сумма заказа с НДС</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">289 658 ₽</div>
-											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">НДС (%)</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">20% - 258 ₽</div>
-											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Сумма заказа без НДС</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">8 ₽</div>
-											</div>
-										</div>
-										<div class="canceled-item-col canceled-item-col-3">
-											<a href="#" class="btn xs:w-auto">Повторить заказ</a>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="basket-items-canceled mb-5">
-								<div class="accordion-item show">
-									<div class="flex items-center w-full justify-between mb-4">
-										<div class="btn btn-obrabotka">В обработке</div>
-										<button class="faq-button p-0 w-24 accordion-button flex-grow"></button>
-									</div>
-									<div class="mb-2.5 xs:flex">
-										<div class="xs:mr-5">Заказ № 3568846</div>
-										<div class="color-grey">02.05.24</div>
-									</div>
-									<div class="accordion-collapse text-xs sm:text-sm mb-2.5 xs:mb-4">
-										<div class="canceled-item">
-											<div class="canceled-item-img">
-												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
-											</div>
+								<div class="basket-items-canceled mb-5">
+									<div class="accordion-item show">
+										<div class="flex items-center w-full justify-between mb-4">
+											<div class="btn btn-obrabotka">В обработке</div>
+											<button class="faq-button p-0 w-24 accordion-button flex-grow"></button>
+										</div>
+										<div class="mb-2.5 xs:flex">
+											<div class="xs:mr-5">Заказ № 3568846</div>
+											<div class="color-grey">02.05.24</div>
+										</div>
+										<div class="accordion-collapse text-xs sm:text-sm mb-2.5 xs:mb-4">
+											<div class="canceled-item">
+												<div class="canceled-item-img">
+													<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+												</div>
 
-											<div class="canceled-item-descript">
-												<div class="flex justify-between items-center">
-													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
-													<div class="addto-favorite"></div>
-												</div>
-												<div class="flex items-center justify-between">
-													<div>
-														<span class="mr-2.5">№ 58864</span>
-														<span class="color-grey">8 шт</span>
+												<div class="canceled-item-descript">
+													<div class="flex justify-between items-center">
+														<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+														<div class="addto-favorite"></div>
 													</div>
-													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													<div class="flex items-center justify-between">
+														<div>
+															<span class="mr-2.5">№ 58864</span>
+															<span class="color-grey">8 шт</span>
+														</div>
+														<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="canceled-item">
-											<div class="canceled-item-img">
-												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
-											</div>
+											<div class="canceled-item">
+												<div class="canceled-item-img">
+													<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+												</div>
 
-											<div class="canceled-item-descript">
-												<div class="flex justify-between items-center">
-													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
-													<div class="addto-favorite"></div>
-												</div>
-												<div class="flex items-center justify-between">
-													<div>
-														<span class="mr-2.5">№ 58864</span>
-														<span class="color-grey">8 шт</span>
+												<div class="canceled-item-descript">
+													<div class="flex justify-between items-center">
+														<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+														<div class="addto-favorite"></div>
 													</div>
-													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													<div class="flex items-center justify-between">
+														<div>
+															<span class="mr-2.5">№ 58864</span>
+															<span class="color-grey">8 шт</span>
+														</div>
+														<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="canceled-item">
-											<div class="canceled-item-img">
-												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
-											</div>
+											<div class="canceled-item">
+												<div class="canceled-item-img">
+													<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+												</div>
 
-											<div class="canceled-item-descript">
-												<div class="flex justify-between items-center">
-													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
-													<div class="addto-favorite"></div>
-												</div>
-												<div class="flex items-center justify-between">
-													<div>
-														<span class="mr-2.5">№ 58864</span>
-														<span class="color-grey">8 шт</span>
+												<div class="canceled-item-descript">
+													<div class="flex justify-between items-center">
+														<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+														<div class="addto-favorite"></div>
 													</div>
-													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													<div class="flex items-center justify-between">
+														<div>
+															<span class="mr-2.5">№ 58864</span>
+															<span class="color-grey">8 шт</span>
+														</div>
+														<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="canceled-item">
-											<div class="canceled-item-img">
-												<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
-											</div>
+											<div class="canceled-item">
+												<div class="canceled-item-img">
+													<img src="img/canceled-img1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-fit">
+												</div>
 
-											<div class="canceled-item-descript">
-												<div class="flex justify-between items-center">
-													<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
-													<div class="addto-favorite"></div>
-												</div>
-												<div class="flex items-center justify-between">
-													<div>
-														<span class="mr-2.5">№ 58864</span>
-														<span class="color-grey">8 шт</span>
+												<div class="canceled-item-descript">
+													<div class="flex justify-between items-center">
+														<div class="mr-3">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка</div>
+														<div class="addto-favorite"></div>
 													</div>
-													<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													<div class="flex items-center justify-between">
+														<div>
+															<span class="mr-2.5">№ 58864</span>
+															<span class="color-grey">8 шт</span>
+														</div>
+														<div class="font-semibold text-sm-2 xs:font-bold xs:text-lg">258 ₽</div>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="canceled-item-row">
-										<div class="canceled-item-col canceled-item-col-1 mb-7 xs:mb-0">
-											<a href="#" class="btn btn-cancel w-auto xs:w-full">Показать все товары заказа</a>
-										</div>
-										<div class="canceled-item-col canceled-item-col-2">
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Адрес доставки</div>
-												<div class="canceled-item-col2">г. Москва, Причальный пр-д, 3 корпус 3, кв. 59</div>
+										<div class="canceled-item-row">
+											<div class="canceled-item-col canceled-item-col-1 mb-7 xs:mb-0">
+												<a href="#" class="btn btn-cancel w-auto xs:w-full">Показать все товары заказа</a>
 											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Кол-во товаров</div>
-												<div class="canceled-item-col2">58 986 шт</div>
+											<div class="canceled-item-col canceled-item-col-2">
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Адрес доставки</div>
+													<div class="canceled-item-col2">г. Москва, Причальный пр-д, 3 корпус 3, кв. 59</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Кол-во товаров</div>
+													<div class="canceled-item-col2">58 986 шт</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Общая сумма заказа</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">2 658 ₽</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Экономия</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg color-green">6 258 ₽</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Сумма заказа с НДС</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">289 658 ₽</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">НДС (%)</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">20% - 258 ₽</div>
+												</div>
+												<div class="canceled-item-row2">
+													<div class="canceled-item-col2 color-grey">Сумма заказа без НДС</div>
+													<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">8 ₽</div>
+												</div>
 											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Общая сумма заказа</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">2 658 ₽</div>
+											<div class="canceled-item-col canceled-item-col-3">
+												<a href="#" class="btn xs:w-auto">Повторить заказ</a>
 											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Экономия</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg color-green">6 258 ₽</div>
-											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Сумма заказа с НДС</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">289 658 ₽</div>
-											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">НДС (%)</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">20% - 258 ₽</div>
-											</div>
-											<div class="canceled-item-row2">
-												<div class="canceled-item-col2">Сумма заказа без НДС</div>
-												<div class="canceled-item-col2 font-semibold sm:font-bold sm:text-lg">8 ₽</div>
-											</div>
-										</div>
-										<div class="canceled-item-col canceled-item-col-3">
-											<a href="#" class="btn xs:w-auto">Повторить заказ</a>
 										</div>
 									</div>
 								</div>
+								</div>
+								<!--end column-center-3-->
+								<footer class="footer">
+									<div class="flex items-center justify-between">
+										<a href="#" class="flex-shrink-0 mr-2"><img src="img/logo.png" width="96" height="21" loading="lazy" decoding="async" alt="" class="mb-5"></a>
+										<ul class="social mb-5">
+											<li>
+												<a href="#"><img src="img/social_insta.svg" alt="" width="16" height="16" loading="lazy" decoding="async" class="img-center"></a>
+											</li>
+											<li>
+												<a href="#"><img src="img/social_fb.svg" alt="" width="18" height="18" loading="lazy" decoding="async" class="img-center"></a>
+											</li>
+										</ul>
+									</div>
+									<ul class="footer-nav">
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Главная</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="about.html" class="footer-nav-a">О нас</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Каталог</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Контакты</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Отзывы</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Отмена заказа и возврат товара</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Политика конфиденциальности</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="faq.html" class="footer-nav-a">Часто задаваемые вопросы</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Правила пользования</a>
+										</li>
+										<li class="footer-nav-li">
+											<a href="#" class="footer-nav-a">Поставщикам</a>
+										</li>
+									</ul>
+									<div class="footer-euro-part">
+										<img src="img/euro-mark.png" alt="">
+										<div class="footer-euro-part-content">SIA LAVASH 2024.gada 27.maijā noslēdza līgumu 
+											Nr.17.2-5-L-2024/274 ar Latvijas Investīciju un attīstības aģentūru par atbalsta 
+											saņemšanu uzņēmuma digitalizācijas programmā “Latvijas Atveseļošanas un noturības 
+											mehānisma plāna 2. komponentes “Digitālā transformācija” 2.2. reformu un investīciju 
+											virziena “Uzņēmumu digitālā transformācija un inovācijas” 2.2.1.r. 
+											“Uzņēmējdarbības digitālās transformācijas pilna cikla atbalsta izveide ar 
+											reģionālo tvērumu” 2.2.1.2.i. investīcijas “Atbalsts procesu digitalizācijai komercdarbībā”.
+											<br/>Ar šo informējam arī citus uzņēmumus par iespēju pievienoties <span><a href="https://www.liaa.gov.lv/lv/programmas/atbalsts-procesu-digitalizacijai">programmai.</a></span></div>
+									</div>
+									<div class="footer-year">Все права защищены ©2024</div>
+								</footer>
 							</div>
 						</div>
-						<!--end column-center-3-->
-						<footer class="footer">
-							<div class="flex items-center justify-between">
-								<a href="#" class="flex-shrink-0 mr-2"><img src="img/logo.png" width="96" height="21" loading="lazy" decoding="async" alt="" class="mb-5"></a>
-								<ul class="social mb-5">
-									<li>
-										<a href="#"><img src="img/social_insta.svg" alt="" width="16" height="16" loading="lazy" decoding="async" class="img-center"></a>
-									</li>
-									<li>
-										<a href="#"><img src="img/social_tube.svg" alt="" width="18" height="14" loading="lazy" decoding="async" class="img-center"></a>
-									</li>
-									<li>
-										<a href="#"><img src="img/social_fb.svg" alt="" width="18" height="18" loading="lazy" decoding="async" class="img-center"></a>
-									</li>
-								</ul>
+						<!--end column-center-->
+						<div class="column-right basket-wrapper scrollbar-no">
+							<div class="basket-top">
+								<div class="basket-addr" data-bs-toggle="modal" data-bs-target="#modalAddr">
+									<div class="basket-addr-in">
+										<span class="basket-addr-span1">Никольская улица длинное, </span>
+										<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
+									</div>
+									<button class="basket-addr-btn"></button>
+								</div>
+								<div class="basket-addr-bottom mb-4">Доставка завтра</div>
+								<button class="basket-close"></button>
 							</div>
-							<ul class="footer-nav">
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">О нас</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Правила покупки</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Условия возврата</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Часто задаваемые вопросы</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Вопрос-ответ</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Контакты</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Информация об авторских правах</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Стать курьером</a>
-								</li>
-								<li class="footer-nav-li">
-									<a href="#" class="footer-nav-a">Поставщикам</a>
-								</li>
-							</ul>
-							<div class="footer-year">2024</div>
-						</footer>
+							<div class="basket-items scrollbar-no">
+								<div class="message-box">
+													Некоторые товары раскупили - мы убрали их из вашей корзины
+													<button class="message-box-close"></button>
+								</div>
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+	
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+	
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+	
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="basket-item">
+									<div class="basket-img-wrap">
+										<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
+									</div>
+	
+									<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
+														 <div class="basket-title-span">500 г</div>
+										<button class="basket-remove"></button>
+									</div>
+									<div class="basket-descript">
+										<div class="rangedVal">
+											<button type="button" class="decreaseVal"></button>
+											<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
+											<button type="button" class="increaseVal"></button>
+										</div>
+										<div class="text-right">
+											<span class="basket-price-through">1044</span>
+											<span class="basket-price">
+												<span class="basketPrice">1004</span> ₽</span>
+										</div>
+									</div>
+	
+								</div>
+								<!--end basket-item-->
+								<div class="flex justify-between items-center mt-2.5">
+									<span class="basket-delivery-title">Доставка</span>
+									<div class="basket-delivery-price">
+										<span class="basketDelivery">3000</span> ₽</div>
+								</div>
+							</div>
+							<div class="basket-total basket-items-after">
+								<div class="basket-total-span">Итого</div>
+								<span class="basketTotal">2 458</span> ₽
+											 <button class="btn">Купить</button>
+							</div>
+							<div class="basket-empty">
+								<img src="img/basket-empty.svg" alt="" width="100" height="100" loading="lazy" decoding="async" class="basket-empty-img">
+											 Ваша корзина пока пуста
+										</div>
+						</div>
+						<!--end column-right-->
 					</div>
-					<!--end column-center-->
-					<div class="column-right basket-wrapper scrollbar-no">
-						<div class="basket-top">
-							<div class="basket-addr" data-bs-toggle="modal" data-bs-target="#modalCity">
-								<div class="basket-addr-in">
-									<span class="basket-addr-span1">Никольская улица длинное, </span>
-									<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
-								</div>
-								<button class="basket-addr-btn"></button>
-							</div>
-							<div class="basket-addr-bottom mb-4">Доставка в течении дня</div>
-							<button class="basket-close"></button>
-						</div>
-						<div class="basket-items  scrollbar-no">
-							<div class="message-box">
-                        Некоторые товары раскупили - мы убрали их из вашей корзины
-                        <button class="message-box-close"></button>
-							</div>
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="basket-item">
-								<div class="basket-img-wrap">
-									<img src="img/basket1.png" alt="" width="" height="" loading="lazy" decoding="async" class="img-center">
-								</div>
-
-								<div class="basket-title">Хлеб 500 грам 3я строчка. Хлеб аиввиви 500 грам 3я строчка
-                           <div class="basket-title-span">500 г</div>
-									<button class="basket-remove"></button>
-								</div>
-								<div class="basket-descript">
-									<div class="rangedVal">
-										<button type="button" class="decreaseVal"></button>
-										<input type="number" min ="1" max="22" value="2" class="rangedInput" disabled>
-										<button type="button" class="increaseVal"></button>
-									</div>
-									<div class="text-right">
-										<div class="basket-numbers">
-											<span class="basketNumber">2</span> шт</div>
-										<span class="basket-price-through">1044</span>
-										<span class="basket-price">
-											<span class="basketPrice">1004</span> ₽</span>
-									</div>
-								</div>
-
-							</div>
-							<!--end basket-item-->
-							<div class="flex justify-between items-center mt-2.5">
-								<span class="basket-delivery-title">Доставка</span>
-								<div class="basket-delivery-price">
-									<span class="basketDelivery">3000</span> ₽</div>
-							</div>
-						</div>
-						<div class="basket-total basket-items-after">
-							<div class="basket-total-span">Итого</div>
-							<span class="basketTotal">2 458</span> ₽
-                     <button class="btn mt-4 font-normal">Продолжить</button>
-						</div>
-
-						<div class="basket-empty">
-							<img src="img/basket-empty.svg" alt="" width="100" height="100" loading="lazy" decoding="async" class="basket-empty-img">
-                     Ваша корзина пока пуста
-                  </div>
-					</div>
-					<!--end column-right-->
 				</div>
 			</div>
 			<!--end container-->
