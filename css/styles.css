@@ -1572,7 +1572,8 @@ textarea {
 }
 
 .checkbox .checkbox-input:checked + .checkbox-ico + span {
-  color: var(--chernyy);
+  color: rgba(89, 89, 89, 1);
+  font-size: 14px;
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -5375,7 +5376,7 @@ input[type=number]::-webkit-inner-spin-button {
   position: relative;
   z-index: 90;
   letter-spacing: 4px;
-  color: rgba(64, 64, 64, 1);
+  color: rgba(89, 89, 89, 1);
 }
 
 .input-look-el.form-control {
@@ -10182,4 +10183,19 @@ button.swiper-pagination-bullet {
 .cabinet .menu-nav-a {
   padding: 12px 5px;
   color: rgba(89, 89, 89, 1);
+}
+
+/*---------------------------------profile-----------------------------*/
+.column-profile-block {
+  padding-top: 10px;
+}
+.column-profile-block .mb-1 {
+  margin-bottom: 10px;
+  color: rgba(89, 89, 89, 1);
+  font-size: 14px;
+}
+.column-profile-block .addres {
+  color: rgba(89, 89, 89, 1);
+  font-size: 14px;
+  line-height: 1.2;
 }
