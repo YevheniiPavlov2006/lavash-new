@@ -1115,6 +1115,10 @@ video {
   --red: #fa3e2c;
 }
 
+.color-black-new {
+  color: rgba(89, 89, 89, 1);
+}
+
 @font-face {
   font-family: "Inter";
 
@@ -1315,6 +1319,7 @@ html, body {
   font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 600;
+  color: rgba(89, 89, 89, 1);
 }
 
 .basket-price-through.h2,.basket-price-through .modal-title, h1.basket-price-through {
@@ -1544,6 +1549,7 @@ textarea {
 .radio-select .radio-select-caption {
   position: relative;
   z-index: 100;
+  color: rgba(89, 89, 89, 1);
 }
 
 .checkbox {
@@ -2792,6 +2798,7 @@ input[type=number]::-webkit-inner-spin-button {
   padding-right: 0;
   font-size: 18px;
   font-weight: bold;
+  color: rgba(89, 89, 89, 1);
 }
 
 .menu-nav-a-rules {
@@ -8962,6 +8969,10 @@ button.swiper-pagination-bullet {
   border: 1px solid #ddd;
   width: 16rem;
 }
+.datepicker__wrapper table thead th {
+  color: rgba(89, 89, 89, 1);
+  font-weight: 600;
+}
 
 .datepicker__wrapper::after {
   content: "";
@@ -8985,9 +8996,10 @@ button.swiper-pagination-bullet {
 .datepicker__title {
   display: inline-block;
   padding: 0.25rem;
-  font-size: 0.875rem;
+  font-size: 15px;
   line-height: 1.5rem;
   font-weight: bold;
+  color: rgba(89, 89, 89, 1);
 }
 
 .datepicker__prev,
@@ -9044,7 +9056,7 @@ button.swiper-pagination-bullet {
 }
 
 .datepicker__day {
-  color: #333;
+  color: #595959;
 }
 
 .datepicker__day div {
@@ -9173,7 +9185,6 @@ button.swiper-pagination-bullet {
 .datepicker table th, .datepicker table td {
   font-size: 14px;
   font-family: "Inter";
-  font-weight: normal;
 }
 
 .datepicker__day .datepicker__daynum {
@@ -9203,7 +9214,7 @@ button.swiper-pagination-bullet {
 }
 
 .datepicker table th, .datepicker__day.is-disabled, .datepicker__day.is-otherMonth {
-  color: var(--temno-seryy);
+  color: #A6A6A6;
 }
 
 .datepicker__prev, .datepicker__next {
@@ -9403,7 +9414,7 @@ button.swiper-pagination-bullet {
 }
 
 .modal-content {
-  padding: 15px;
+  padding: 20px;
   background: var(--seryy-fon-kategorii);
   min-height: 100vh;
   /*.prev-btn-color2{
