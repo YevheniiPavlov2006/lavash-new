@@ -4118,10 +4118,12 @@ input[type=number]::-webkit-inner-spin-button {
   width: 27px;
   height: 27px;
   background: url(../img/favorite-ico.svg) no-repeat center;
-  background-color: rgba(126, 159, 44, 0.08);
+  background-color: rgba(233, 233, 233, 1);
   border-radius: 100px;
   z-index: 110;
-  position: relative;
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
 }
 
 .addto-favorite-grey {
@@ -4160,7 +4162,9 @@ input[type=number]::-webkit-inner-spin-button {
 .modal-buy-col1 {
   order: 1;
   margin-bottom: 15px;
+  position: relative;
 }
+
 
 @media (min-width: 768px) {
   .modal-buy-col1 {
@@ -9220,6 +9224,11 @@ button.swiper-pagination-bullet {
 .modal.show {
   left: 0;
 }
+@media (max-width:768px){
+  .modal.show {
+    padding-top: 90px;
+  }
+}
 
 .modal-title{
   position: sticky;
@@ -9374,8 +9383,6 @@ button.swiper-pagination-bullet {
 }
 
 .modal-backdrop.show {
-  background: #FFF;
-  opacity: 1;
 }
 
 @media (min-width: 992px) {
@@ -9420,6 +9427,13 @@ button.swiper-pagination-bullet {
   right: 15px;
   z-index: 1100;
 }
+@media (max-width:768px){
+  .modal-content-in .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
 
 @media (min-width: 992px) {
   .modal-content-in .btn-close {
@@ -9448,9 +9462,20 @@ button.swiper-pagination-bullet {
 .modal-white .modal-content {
   background: #FFF;
 }
+@media(max-width:768px){
+  .modal-white .modal-content {
+    border-radius: 30px;
+  }
+
+}
 
 .modal-white .btn-close {
   background-color: var(--seryy-fon-kategorii);
+}
+@media (max-width:768px){
+  .modal-white .btn-close {
+    background-color: rgba(233, 233, 233, 1);
+  }
 }
 
 .modal-simple .modal-content {
@@ -10250,4 +10275,10 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   font-weight: 700;
   color: rgba(42, 42, 42, 1);
+}
+
+
+
+.fs-14 {
+  font-size: 14px;
 }
