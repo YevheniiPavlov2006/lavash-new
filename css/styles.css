@@ -2763,7 +2763,7 @@ input[type=number]::-webkit-inner-spin-button {
 .main-content {
   position: fixed;
   left: 0;
-  top: 100px;
+  top: 90px;
   width: 100%;
 }
 @media (max-width:992px) {
@@ -10208,4 +10208,46 @@ button.swiper-pagination-bullet {
   color: rgba(89, 89, 89, 1);
   font-size: 14px;
   line-height: 1.2;
+}
+
+
+/*-------------------------adaptive-order-btn---------------------------*/
+.adaptive-order-block {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 10000000000000000000000;
+  background-color: rgba(168, 207, 69, 1);
+  border-radius: 50px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 20px;
+}
+@media(max-width:992px){
+  .adaptive-order-block {
+    display: flex;
+  }
+}
+.adaptive-order-block img {
+  width: 30px;
+  height: 30px;
+}
+.adaptive-order-block-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.adaptive-order-block-time {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(42, 42, 42, 1);
+}
+.adaptive-order-block-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(42, 42, 42, 1);
 }
