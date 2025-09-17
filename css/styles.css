@@ -1232,6 +1232,11 @@ html, body {
   background: #fff;
   align-items: center;
 }
+@media (max-width:550px){
+  .header-in {
+    padding: 15px 0;
+  }
+}
 .header .main-search-header {
   grid-column-start: 3;
   grid-column-end: 10;
