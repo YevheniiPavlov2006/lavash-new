@@ -2453,8 +2453,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .ctg-buy:not(.swiper-horizontal) {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 @media (min-width: 992px) {
@@ -4845,7 +4843,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .step-list-li-active:before, .step-list-li-active:after {
-  background: var(--salatovyy-logo);
+  background: rgba(166, 166, 166, 1);
 }
 
 @media (min-width: 768px) {
