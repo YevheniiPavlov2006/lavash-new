@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 freeMode: false
             },
             1100: {
-                slidesPerView: 4,
+                slidesPerView: 4.6,
                 freeMode: false
             },
             1480: {

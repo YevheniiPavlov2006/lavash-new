@@ -2276,6 +2276,10 @@ input[type=number]::-webkit-inner-spin-button {
   height: 185px;
   width: 140px;
 }
+
+.swiper-slide .ctg-item-card {
+  width: 100%;
+}
 .ctg-item-card:hover {
   box-shadow: none;
 }
