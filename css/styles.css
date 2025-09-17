@@ -4246,6 +4246,12 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 18px;
 }
 
+@media (max-width:768px){
+  .product-info-title {
+    font-size: 24px;
+  }
+}
+
 @media (min-width: 768px){
   .product-info-title{
     font-size: 1.5rem;
