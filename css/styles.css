@@ -1802,7 +1802,6 @@ input[type=number]::-webkit-inner-spin-button {
 .menu-btn, .rounded-icos, .addto-favorite, .profile-images-li {
   overflow: hidden;
   border-radius: 50%;
-  background: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1865,7 +1864,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .header-menu-wrapper {
-  overflow: auto;
+  overflow: hidden;
   z-index: 1000;
   background: #FFF;
   padding: 20px;
@@ -1877,6 +1876,9 @@ input[type=number]::-webkit-inner-spin-button {
   flex-grow: 1;
   align-items: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (min-width: 992px) {
@@ -1886,14 +1888,13 @@ input[type=number]::-webkit-inner-spin-button {
     transform: translateY(-50%);
     bottom: auto;
     border-radius: 30px;
-    overflow: auto;
     max-height: calc(100vh - 76px);
   }
 }
 
 .menu-btn img {
-  width: 23px;
-  height: 23px;
+  width: 30px;
+  height: 30px;
 }
 
 .header {
@@ -2657,9 +2658,7 @@ input[type=number]::-webkit-inner-spin-button {
 .menu-nav-ul {
   border-top: 1px solid var(--seryy-fon-kategorii);
   border-bottom: 1px solid var(--seryy-fon-kategorii);
-  margin-bottom: 30px;
   overflow-y: scroll;
-  max-height: 420px;
 }
 .menu-nav-ul::-webkit-scrollbar {
   display: none;
@@ -2684,8 +2683,13 @@ input[type=number]::-webkit-inner-spin-button {
   color: rgba(42, 42, 42, 1);
 }
 .header-menu-wrapper .btn {
-  font-size: 18px !important;
+  font-size: 18px;
   padding: 12px 0;
+}
+@media(max-width:550px){
+  .header-menu-wrapper .btn {
+    font-size: 16px;
+  }
 }
 
 
@@ -2964,6 +2968,16 @@ input[type=number]::-webkit-inner-spin-button {
 
 .menu-nav .menu-nav-a {
   text-align: center;
+}
+.header-menu-wrapper .menu-nav {
+  flex: 1;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.header-menu-wrapper .menu-nav::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 @media (min-width: 992px) {
@@ -3951,6 +3965,15 @@ input[type=number]::-webkit-inner-spin-button {
 .menuActive .header-menu-wrapper {
   right: 40px;
   z-index: 900;
+}
+@media (max-width:992px){
+  .menuActive .header-menu-wrapper {
+    right: 0;
+    width: 100%;
+  }
+}
+.header-menu-wrapper .flex {
+  width: 100%;
 }
 
 .menuActive .site-overlay {
