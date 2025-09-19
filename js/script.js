@@ -157,19 +157,15 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         breakpoints: {
             992: {
-                slidesPerView: 3,
                 freeMode: false
             },
             1100: {
-                slidesPerView: 4.6,
                 freeMode: false
             },
             1480: {
-                slidesPerView: 5,
                 freeMode: false
             },
             1680: {
-                slidesPerView: 6,
                 freeMode: false
             },
         }
