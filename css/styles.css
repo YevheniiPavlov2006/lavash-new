@@ -4554,6 +4554,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width:600px){
   .footer-euro-part {
     flex-direction: column;
+    align-items: center;
   }
   .footer-euro-part img {
     width: 100%;
@@ -10377,4 +10378,107 @@ button.swiper-pagination-bullet {
 .menu-nav-li.rules-list .menu-nav-a {
   padding: 0;
   font-size: 16px;
+}
+
+
+
+
+
+/*--------------------------------------pages----------------------------------*/
+.content-faq .column-center-scrollable {
+  overflow-y: scroll;
+  padding-bottom: 60px;
+  height: 100vh;
+}
+.content-faq {
+  position: fixed;
+  top: 85px;
+  margin-top: 0;
+}
+.content-faq .column-center {
+  box-shadow: none;
+}
+
+
+.content-otzivi .column-center-scrollable {
+  overflow-y: scroll;
+  padding-bottom: 60px;
+  height: 100vh;
+}
+.content-otzivi {
+  position: fixed;
+  top: 85px;
+  margin-top: 0;
+}
+.content-otzivi .column-center {
+  box-shadow: none;
+}
+.content-otzivi .fs-14.text-xs {
+  color: #595959;
+}
+
+.content-about .column-center-scrollable {
+  overflow-y: scroll;
+  padding-bottom: 60px;
+  height: 100vh;
+}
+.content-about {
+  position: fixed;
+  top: 85px;
+  margin-top: 0;
+}
+.content-about .column-center {
+  box-shadow: none;
+}
+
+@media (max-width:992px){
+  .content-faq .column-center-scrollable {
+    padding-bottom: 155px;
+  }
+  .content-otzivi .column-center-scrollable {
+    padding-bottom: 155px;
+  }
+  .content-about .column-center-scrollable {
+    padding-bottom: 155px;
+  }
+}
+@media (max-width:700px){
+  .content-faq .column-center-scrollable {
+    padding-bottom: 145px;
+  }
+  .content-otzivi .column-center-scrollable {
+    padding-bottom: 145px;
+  }
+  .content-about .column-center-scrollable {
+    padding-bottom: 145px;
+  }
+}
+@media (max-width:550px) {
+  .content-about .mail-list div {
+    width: 100%;
+  }
+  .content-about .mail-list .mail-list-item-caption {
+    font-size: 14px;
+  }
+  .content-about .mail-list a {
+    font-size: 15px;
+  }
+  .content-about .mail-list .mail-list-item-mail {
+    font-size: 14px;
+  }
+  .content-about .mail-list-item-phone {
+    flex-direction: column;
+    display: flex;
+    padding: 15px 45px;
+  }
+  .mail-list-item-col-full-button {
+    text-align: center;
+  }
+  .mail-list-item-col-full-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    padding-bottom: 15px;
+  }
 }
