@@ -1212,6 +1212,7 @@ html, body {
   @aplly flex flex-col min-h-full;
 }
 
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -2785,6 +2786,10 @@ input[type=number]::-webkit-inner-spin-button {
   left: 0;
   top: 90px;
   width: 100%;
+}
+.main-content::-webkit-scrollbar {
+  display: none; 
+  width: 0;
 }
 @media (max-width:992px) {
   .main-content {
@@ -10480,5 +10485,35 @@ button.swiper-pagination-bullet {
     width: 100%;
     gap: 15px;
     padding-bottom: 15px;
+  }
+}
+
+
+
+
+
+* {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE и Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none;    
+  width: 0;          /* Chrome, Safari, Opera */
+}
+
+
+@media (max-width:992px){
+  .swiperBuy {
+    width: 100vw;
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+}
+@media (max-width:500px){
+  .swiperBuy {
+    width: 100vw;
+    margin-left: -10px;
+    padding-left: 10px;
   }
 }
