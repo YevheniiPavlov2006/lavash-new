@@ -2798,6 +2798,13 @@ input[type=number]::-webkit-inner-spin-button {
     min-height: 100dvh; 
   }
 }
+@media (max-width:410px) {
+  .main-content {
+    position: relative;
+    margin-top: 300px;
+    min-height: 100dvh; 
+  }
+}
 .main-columns {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -10504,14 +10511,14 @@ button.swiper-pagination-bullet {
 
 
 @media (max-width:992px){
-  .swiperBuy {
+  .swiperBuy, .swiperAction {
     width: 100vw;
     margin-left: 15px;
     padding-left: 15px;
   }
 }
 @media (max-width:500px){
-  .swiperBuy {
+  .swiperBuy, .swiperAction {
     width: 100vw;
     margin-left: -10px;
     padding-left: 10px;
