@@ -1469,23 +1469,6 @@ textarea {
   color: var(--chernyy);
 }
 
-.form-control:hover, .select:hover select {
-  outline: 4px solid #F5F2E8;
-}
-
-.form-control:focus, .select select:focus,
-.form-control:hover, .select select:hover {
-  outline: 1px solid #CCCF45;
-}
-
-.form-control:disabled, .select select:disabled {
-  background: #F3F3F3;
-}
-
-.form-control:invalid, .select select:invalid {
-  border-color: #D00000;
-}
-
 .radio {
   display: flex;
   align-items: center;
@@ -4752,6 +4735,7 @@ input[type=number]::-webkit-inner-spin-button {
 .modal-bottom {
   bottom: 0;
   padding-bottom: 0;
+  padding-top: 5px;
   position: sticky;
   z-index: 100;
   background: var(--seryy-fon-kategorii);
@@ -9652,7 +9636,7 @@ button.swiper-pagination-bullet {
 
 .btn-close {
   border-radius: 30px;
-  background: #FFF url(../img/close.svg) no-repeat center;
+  background: url(../img/close.svg) no-repeat center;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -10566,4 +10550,21 @@ button.swiper-pagination-bullet {
   font-size: 28px;
   font-weight: 700;
   padding-bottom: 50px;
+}
+
+.modal input:focus {
+  outline: none !important;
+}
+.form-control-code {
+  color: rgba(64, 64, 64, 1);
+}
+
+
+
+.modal-content-basket {
+  padding-left: 0;
+  padding-right: 0;
+}
+.modal-content-basket-top {
+  max-width: calc(100% -30px) !important;
 }

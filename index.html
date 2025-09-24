@@ -277,11 +277,11 @@
 
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						<div class="modal-title">Оформление заказа</div>
-						<form action="#" class="flex-grow flex flex-col">
+						<form action="#" class=" flex flex-col">
 							<div class="flex-grow">
 								<div class="mb-5 text-xs color-grey text-center">Телефон</div>
 								<div class="mb-4 form-group">
-									<input type="text" class="form-control form-control-transparent" placeholder="+7"/>
+									<input type="text" class="form-control form-control-transparent form-control-code" id="code-input-modal" placeholder="+7"/>
 								</div>
 								<div class="color-grey text-sm mb-5">Продолжая вы соглашаетесь с <a href="#" class="font-semibold">Условиями использования</a> и <a href="#" class="font-semibold">Политикой конфиденциальности</a>
 								</div>
@@ -290,7 +290,7 @@
 							</div>
 
 							<div class="modal-bottom">
-								<button  class="btn btn-cancel">Войти</button>
+								<button  class="btn btn-cancel mt-1">Войти</button>
 							</div>
 
 						</form>
@@ -1003,7 +1003,6 @@
 										<span class="basket-addr-span1">Никольская улица длинное, </span>
 										<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
 									</div>
-									<button class="basket-addr-btn"></button>
 								</div>
 								<div class="basket-addr-bottom">Доставка в течении дня</div>
 							</div>
@@ -1088,11 +1087,7 @@
 		<div class="modal modal-simple modal-city fade" id="modalCity" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
 			<div class="modal-dialog">
 				<div class="modal-content overflow-hidden">
-					<button type="button" class="btn-close hidden xs:block" data-bs-dismiss="modal" aria-label="Close"></button>
-					<div class="modal-top">
-						<button type="button" class="prev-btn -mr-10" data-bs-dismiss="modal" aria-label="Close"></button>
-						<div class="font-bold flex-grow text-center">Добавить адрес</div>
-					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					<div class="modal-content-in modal-content-in-bottom autoComplete-in">
 
 						<div class="modal-city-col">
@@ -1403,9 +1398,9 @@
 
 		<div class="modal modal-buy fade" id="modalBasket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"data-bs-keyboard="false" >
 			<div class="modal-dialog">
-				<div class="modal-content">
+				<div class="modal-content modal-content-basket">
 					<div class="modal-content-in min-h-80 flex flex-col">
-						<div class="div">
+						<div class="div modal-content-basket-top">
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
 							<div class="basket-addr pr-12" data-bs-toggle="modal" data-bs-target="#modalAddr">
@@ -1413,7 +1408,6 @@
 									<span class="basket-addr-span1">Никольская улица длинное, </span>
 									<span class="basket-addr-span2">6/2 ст 1 кв 55</span>
 								</div>
-								<button class="basket-addr-btn"></button>
 							</div>
 							<div class="basket-addr-bottom mb-4">Доставка в течении дня</div>
 						</div>

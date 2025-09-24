@@ -981,3 +981,13 @@ faqItems.forEach(faq => {
     faq.classList.toggle(faqItemOpenedClass)
   })
 })
+
+/*----------------------------modal-input--------------------------*/
+const inputCode = document.getElementById("code-input-modal");
+const prefix = "+7";
+
+inputCode.addEventListener("focus", () => {
+  if (inputCode.value === "") {
+    inputCode.value = prefix;
+  }
+});
