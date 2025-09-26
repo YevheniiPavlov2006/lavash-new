@@ -3943,6 +3943,24 @@ input[type=number]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
+@media (max-width:768px){
+  .basket-btn {
+    background: none;
+    background-color: var(--salatovyy-logo);
+    padding: 0;
+  }
+  .basket-btn .text-xs {
+    display: none;
+  }
+  .basket-btn div {
+    text-align: center;
+    padding: 11px 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
 .basket-btn:hover {
   background-color: var(--olivkovyy);
 }
