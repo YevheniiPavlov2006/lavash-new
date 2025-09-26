@@ -10739,3 +10739,38 @@ button.swiper-pagination-bullet {
 .swiperBuy .swiper-button-prev {
   display: none;
 }
+
+
+
+
+
+
+
+
+
+.modal-window-adaptive {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  background: none !important;
+}
+.modal-window-adaptive.show {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) !important;
+  padding-top: 0;
+}
+.modal-window-adaptive .modal-dialog {
+  background-color: transparent;
+}
+.modal-window-adaptive .modal-content {
+  min-height: auto;
+  border-radius: 20px;
+}
+@media (max-width:768px){
+  .modal-window-adaptive .modal-content {
+    max-width: calc(100% - 40px) !important;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
