@@ -2025,6 +2025,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .main-search .form-control {
   background: transparent;
+  color: #404040;
   border: 0;
   height: 40px;
   background-color: #f2f2f2;
@@ -2336,7 +2337,9 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .swiperBuy .ctg-item-img, .swiperBuy-modal .ctg-item-img, .ctg-buy .ctg-item-img {
-  height: 0;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1;
   margin-bottom: 5px;
   padding-bottom: 140px;
   border-radius: 15px;
@@ -10212,7 +10215,9 @@ button.swiper-pagination-bullet {
 /*-----------------------------payment--------------------*/
 .main-title-payment {
   display: flex;
+  align-items: center;
   flex-direction: row;
+  padding-bottom: 15px;
 }
 .payment-text {
   color: rgba(89, 89, 89, 1);
@@ -10789,5 +10794,25 @@ button.swiper-pagination-bullet {
 @media(max-width:768px){
   .new-password-btn {
     display: none;
+  }
+}
+
+.column-center-search-3 {
+  border-radius: 0 0 20px 20px;
+}
+
+.search-none-block {
+  display: flex;
+  align-items: center;
+  text-align: start !important;
+  gap: 15px;
+}
+
+.payment-title {
+  margin-left: 15px;
+}
+@media (max-width:992px){
+  .search-none-block {
+    padding-top: 15px;
   }
 }
