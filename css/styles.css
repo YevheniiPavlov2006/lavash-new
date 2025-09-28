@@ -3829,7 +3829,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 .rangedVal-price, .rangedVal-ten {
   width: -moz-min-content;
-  width: 100%;
   font-size: 12px;
   font-weight: 600;
   -moz-column-gap: 5px;
@@ -4193,13 +4192,13 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 100px;
   z-index: 1100000;
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   right: 10px;
 }
 @media (min-width:768px){
   .addto-favorite {
-    right: 22px;
-    top: 12px;
+    right: 15px;
+    top: 15px;
     bottom: auto;
   }
 }
@@ -9467,6 +9466,7 @@ button.swiper-pagination-bullet {
   background: url(../img/slider-button-next.svg);
   height: 100px;
   width: 48px;
+  margin-right: -1px;
 }
 
 .modal .swiper-button-prev {
@@ -10815,4 +10815,27 @@ button.swiper-pagination-bullet {
   .search-none-block {
     padding-top: 15px;
   }
+}
+
+
+.modal-buy-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(89, 89, 89, 1);
+  line-height: 1.1;
+}
+.rangedVal-text-white {
+  color: #fff;
+}
+.rangedVal-text-white.increaseVal::after , .rangedVal-text-white.increaseVal::before {
+  background: #fff  !important;
+}
+.modal-buy-quantity {
+  flex-direction: row;
+  margin-top: 8px;
+}
+.modal-buy-quantity div {
+  color: rgba(126, 159, 44, 1);
+  font-weight: 600 !important;
+  font-size: 14px;
 }
