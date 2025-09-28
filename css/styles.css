@@ -10745,6 +10745,7 @@ button.swiper-pagination-bullet {
   background: none !important;
 }
 .modal-window-adaptive.show {
+  height: 100vh;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%) !important;
@@ -10753,13 +10754,20 @@ button.swiper-pagination-bullet {
 .modal-window-adaptive .modal-dialog {
   background-color: transparent;
 }
+.modal-window-adaptive.show .modal-dialog {
+  background-color: transparent;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 .modal-window-adaptive .modal-content {
   min-height: auto;
   border-radius: 20px;
 }
 @media (max-width:768px){
   .modal-window-adaptive .modal-content {
-    max-width: calc(100% - 40px) !important;
+    width: calc(100% - 40px) !important;
     margin: 0 auto;
     max-width: 400px;
   }
@@ -10774,6 +10782,12 @@ button.swiper-pagination-bullet {
 
 @media (max-width:992px){
   .header-none {
+    display: none;
+  }
+}
+
+@media(max-width:768px){
+  .new-password-btn {
     display: none;
   }
 }
