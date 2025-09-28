@@ -2767,7 +2767,7 @@ input[type=number]::-webkit-inner-spin-button {
 .menu-nav-a-basket {
   padding-left: 0;
   padding-right: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: rgba(89, 89, 89, 1);
 }
@@ -3786,10 +3786,17 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .basket-total-span {
   font-size: 13px;
-  color: rgba(139, 137, 137, 1);
   text-align: center;
-  margin-top: 10px;
+  color: rgba(139, 137, 137, 1);
   font-weight: 600;
+}
+@media (min-width:600px){
+  .basket-total-span {
+    font-size: 16px;
+    text-align: center;
+    color: rgba(64, 64, 64, 1);
+    font-weight: 600;
+  }
 }
 
 .basket-total {
@@ -10713,17 +10720,15 @@ button.swiper-pagination-bullet {
     margin-top: 20px;
     border-radius: 20px 20px 0 0;
   }
-  .modal-basket-row-adapt {
-    display: none;
-  }
 }
 @media (max-width:600px){
   .basket-modal-btn {
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
   }
   .basket-modal-btn .btn-span {
     font-size: 12px;
+    font-weight: 600;
   }
 }
 
@@ -10838,4 +10843,22 @@ button.swiper-pagination-bullet {
   color: rgba(126, 159, 44, 1);
   font-weight: 600 !important;
   font-size: 14px;
+}
+
+.basket-total-block {
+  margin-bottom: 10px;
+}
+
+@media (min-width:600px){
+  .basket-total-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .basket-total-block .basket-total-price {
+    font-size: 16px;
+    color: rgba(158, 158, 158, 1);
+  }
 }
