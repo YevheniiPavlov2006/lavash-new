@@ -1423,6 +1423,9 @@ textarea {
   overflow: hidden;
   resize: none;
 }
+textarea:focus {
+  outline: none;
+}
 
 .form-control-datepicker {
   background-image: url(../img/datepicker.svg);
@@ -2379,7 +2382,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (min-width: 768px) {
   .swiperBuy .ctg-item-title, .swiperBuy-modal .ctg-item-title, .ctg-buy .ctg-item-title {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 600;
   }
 }
 
@@ -2508,7 +2512,7 @@ input[type=number]::-webkit-inner-spin-button {
 .ctg-item-increased .rangedVal-text {
   color: var(--chernyy);
   font-weight: 600;
-  font-size: 13px;
+  font-size: 13px !important;
 }
 
 .ctg-item-increased .decreaseVal:before, .ctg-item-increased .increaseVal:before, .ctg-item-increased .increaseVal:after {
@@ -2667,7 +2671,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .menu-nav-li, .faq-item-first {
   border-bottom: 1px solid var(--seryy-fon-kategorii);
-  border-top: 1px solid var(--seryy-fon-kategorii);
 }
 
 .menu-nav-a, .faq-button {
@@ -10721,6 +10724,23 @@ button.swiper-pagination-bullet {
     border-radius: 20px 20px 0 0;
   }
 }
+.basket-modal-btn {
+  font-weight: 600;
+}
+.basket-modal-btn .btn-span {
+  font-weight: 600;
+}
+
+.basket-addr-line-modal {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.basket-modal-close-btn {
+  top: 20px !important;
+}
+
 @media (max-width:600px){
   .basket-modal-btn {
     font-size: 16px;
@@ -10739,6 +10759,8 @@ button.swiper-pagination-bullet {
 .swiperBuy .swiper-button-prev {
   display: none;
 }
+
+
 
 
 
@@ -10820,6 +10842,9 @@ button.swiper-pagination-bullet {
   .search-none-block {
     padding-top: 15px;
   }
+  .payment-title {
+    text-align: center;
+  }
 }
 
 
@@ -10861,4 +10886,21 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     color: rgba(158, 158, 158, 1);
   }
+}
+
+
+@media (max-width:992px){
+  
+  .column-center-3-middle-h {
+    min-height: 90vh;
+  }
+  .column-center-3-middle-h .mb-4 {
+    padding-top: 20px;
+  }
+  .footer-none-adapt {
+    display: none;
+  }
+}
+.rule-next-btn-none {
+  opacity: 0;
 }
