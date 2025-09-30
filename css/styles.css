@@ -9369,7 +9369,6 @@ button.swiper-pagination-bullet {
 @media (max-width:768px){
   .modal-title {
     top: 0;
-    padding-top: 7px;
   }
 }
 
@@ -9554,8 +9553,8 @@ button.swiper-pagination-bullet {
 @media (max-width:768px){
   .modal-content-in .btn-close {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 20px;
+    right: 20px;
   }
 }
 
@@ -10929,5 +10928,70 @@ button.swiper-pagination-bullet {
 @media (max-width:767px){
   .ctg-item-cat-big {
     font-size: 14px;
+  }
+}
+
+
+
+.modal-content-login {
+  padding-top: 55px;
+}
+.prev-btn-about {
+  display: none;
+}
+.next-btn-about {
+  display: none;
+}
+
+@media (max-width:992px) {
+  .modal-content-login {
+    border-radius: 0 !important;
+    position: relative;
+    padding-top: 20px;
+  }
+  .modal-prev-btn {
+    width: 40px;
+    height: 30px;
+    display: block;
+    background-color: rgba(233, 233, 233, 1);
+  }
+  .login-content {
+    padding-top: 20px;
+  }
+
+
+  .main-uptitle {
+    display: none;
+  }
+  .prev-btn-about {
+    display: block;
+  }
+  .next-btn-about {
+    display: block;
+    opacity: 0;
+  }
+  .top-title-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width:768px){
+  .modal-login {
+    padding-top: 0 !important;
+  }
+}
+
+
+.seacrh-catalog-top {
+  background: var(--seryy-fon-kategorii) url(../img/search-ico.svg) no-repeat center;
+  opacity: 1 !important;
+  width: 30px;
+}
+@media (max-width:992px) {
+  .column-centet-3-catalog {
+    padding-top: 20px;
   }
 }

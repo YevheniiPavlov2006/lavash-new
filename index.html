@@ -576,14 +576,13 @@
 		</div>
 		<!--end modalDateFilter-->
 
-		<div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+		<div class="modal fade modal-login" id="modalLogin" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
 			<div class="modal-dialog">
-				<div class="modal-content modal-content-small">
+				<div class="modal-content modal-content-small modal-content-login">
 					<div class="modal-content-in">
-						<button class="prev-btn prev-btn-color2 sm:hidden" data-bs-dismiss="modal" ></button>
+						<a href="#" class="prev-btn modal-prev-btn"></a>
 						<button type="button" class="btn-close hidden sm:block" data-bs-dismiss="modal" aria-label="Close"></button>
-						<div class="modal-title mb-0">&nbsp;</div>
-						<form action="#" class="form">
+						<form action="#" class="form login-content">
 							<div class="mb-4 form-group">
 								<div class="error">Некорректно введены данные для этого поля</div>
 								<input type="email" class="form-control" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
@@ -617,14 +616,13 @@
 		</div>
 		<!--end modalLogin-->
 
-		<div class="modal fade" id="modalRegister" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
+		<div class="modal fade modal-login" id="modalRegister" tabindex="-1" aria-hidden="true"  data-bs-keyboard="false" >
 			<div class="modal-dialog">
-				<div class="modal-content modal-content-small">
+				<div class="modal-content modal-content-small modal-content-login">
 					<div class="modal-content-in">
-						<button class="prev-btn prev-btn-color2 sm:hidden" data-bs-dismiss="modal" ></button>
+						<a href="#" class="prev-btn modal-prev-btn"></a>
 						<button type="button" class="btn-close hidden sm:block" data-bs-dismiss="modal" aria-label="Close"></button>
-						<div class="modal-title mb-0">&nbsp;</div>
-						<form action="#" class="form relative z-10">
+						<form action="#" class="form relative z-10 login-content">
 							<div class="mb-4 form-group">
 								<div class="error">Некорректно введены данные для этого поля</div>
 								<input type="text" class="form-control" placeholder="Имя" required/>
