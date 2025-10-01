@@ -1408,7 +1408,7 @@ html, body {
 .form-control {
   width: 100%;
   background: #FFF;
-  color: #A6A6A8;
+  color: rgba(42, 42, 42, 1);
   border: 0;
   font-size: 14px;
   font-weight: 600;
@@ -1417,6 +1417,10 @@ html, body {
   line-height: 20px;
   border-radius: 20px;
   font-family: "Inter";
+}
+
+.form-control::placeholder {
+  color: #A6A6A8;
 }
 
 textarea {
@@ -3139,8 +3143,9 @@ input[type=number]::-webkit-inner-spin-button {
 @media (min-width: 992px) {
   .working-time-wrap {
     order: 1;
-    padding: 10px 0;
+    padding: 15px 0;
     background: none;
+    padding-top: 0;
   }
 
   .working-time-wrap .working-time {
@@ -3163,7 +3168,17 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 50px;
   padding: 15px;
 }
-
+.delivery-send-block {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+@media (min-width:992px){
+  .delivery-send {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 @media (max-width: 992px) {
   .adaptive-column-center-sticky {
     margin: 0;
@@ -3174,9 +3189,7 @@ input[type=number]::-webkit-inner-spin-button {
     border-radius: 0;
     border-radius: 50px;
     padding: 15px;
-    width: calc(100% - 30px);
-    margin-left: 15px;
-    margin-bottom: 15px;
+    width: 100%;
   }
   .delivery-send .flex {
   }
@@ -3188,8 +3201,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (max-width: 500px) {
   .delivery-send {
-    width: calc(100% - 20px);
-    margin-left: 10px;
+    width: 100%;
   }
 }
 
@@ -4470,7 +4482,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 .rangedVal-product .rangedVal-text-through {
   color: var(--temno-olivkovyy);
-  font-weight: normal;
   font-size: 12px;
   margin-right: 10px;
 }
