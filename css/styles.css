@@ -4309,7 +4309,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 
-.gallery-item .ctg-item-cat {
+.buy-photo-container .ctg-item-cat {
   bottom: auto;
   top: 15px;
   left: 15px;
@@ -11034,4 +11034,12 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   color: rgba(42, 42, 42, 1);
   padding-left: 5px;
+}
+
+
+
+
+.buy-photo-container {
+  position: relative;
+  border-radius: 20px;
 }
