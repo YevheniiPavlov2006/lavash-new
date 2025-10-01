@@ -7153,7 +7153,6 @@ button.swiper-pagination-bullet {
 }
 
 .modal.fade .modal-dialog {
-  transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
 }
 
@@ -9564,8 +9563,8 @@ button.swiper-pagination-bullet {
 @media (max-width:768px){
   .modal-content-in .btn-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
   }
 }
 
@@ -10150,6 +10149,7 @@ button.swiper-pagination-bullet {
   border-radius: 50px;
   padding: 10px 45px;
   font-size: 16px;
+  text-align: center;
 }
 .mail-list-item-col-full-content {
   display: flex;
@@ -11009,4 +11009,29 @@ button.swiper-pagination-bullet {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+}
+
+
+
+.otziv-list-item-mail {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(89, 89, 89, 1);
+}
+.mail-list-item-phone-otziv {
+  padding: 15px !important;
+}
+
+@media (max-width:550px){
+  .otziv-list-item-mail {
+    text-align: center;
+  }
+}
+
+
+.delete-card-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(42, 42, 42, 1);
+  padding-left: 5px;
 }
